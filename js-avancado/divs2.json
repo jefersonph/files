@@ -1,0 +1,6 @@
+[
+  ["a",{"top":"10px", "left":"300px", "width":"160px", "height":"180px","background-color":"red"}],
+  ["b",{"top":"140px", "left":"100px", "width":"810px", "height":"801px","background-color":"yellow","opacity":0.2}],
+  ["c",{"top":"4px", "left":"230px", "width":"80px", "height":"210px","background-color":"blue","opacity":0.2}],
+  ["d",{"top":"310px", "left":"410px", "width":"740px", "height":"12px","background-color":"magenta","opacity":0.6}]
+]

@@ -1,0 +1,6 @@
+[
+  {"top":"100px", "left":"300px", "width":"60px", "height":"30px","background":"red"},
+  {"top":"340px", "left":"100px", "width":"30px", "height":"40px","background":"green","opacity":0.5},
+  {"top":"40px", "left":"230px", "width":"50px", "height":"90px","background":"blue","opacity":0.2},
+  {"top":"440px", "left":"410px", "width":"70px", "height":"20px","background":"black","opacity":0.9}
+]

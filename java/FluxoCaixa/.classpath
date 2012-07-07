@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path=""/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="Z:/hibernate/lib_hibernate2/cglib-full-2.0.2.jar"/>
+	<classpathentry kind="lib" path="Z:/hibernate/lib_hibernate2/commons-beanutils.jar"/>
+	<classpathentry kind="lib" path="Z:/hibernate/lib_hibernate2/commons-collections-2.1.1.jar"/>
+	<classpathentry kind="lib" path="Z:/hibernate/lib_hibernate2/commons-collections.jar"/>
+	<classpathentry kind="lib" path="Z:/hibernate/lib_hibernate2/commons-dbcp-1.2.1.jar"/>
+	<classpathentry kind="lib" path="Z:/hibernate/lib_hibernate2/commons-digester.jar"/>
+	<classpathentry kind="lib" path="Z:/hibernate/lib_hibernate2/commons-lang-2.0.jar"/>
+	<classpathentry kind="lib" path="Z:/hibernate/lib_hibernate2/commons-logging-1.0.4.jar"/>
+	<classpathentry kind="lib" path="Z:/hibernate/lib_hibernate2/commons-logging.jar"/>
+	<classpathentry kind="lib" path="Z:/hibernate/lib_hibernate2/commons-pool-1.2.jar"/>
+	<classpathentry kind="lib" path="Z:/hibernate/lib_hibernate2/dom4j-1.4.jar"/>
+	<classpathentry kind="lib" path="Z:/hibernate/lib_hibernate2/ehcache-0.9.jar"/>
+	<classpathentry kind="lib" path="Z:/hibernate/lib_hibernate2/geronimo-spec-jta-1.0.1B-rc2.jar"/>
+	<classpathentry kind="lib" path="Z:/hibernate/lib_hibernate2/hibernate2.jar"/>
+	<classpathentry kind="lib" path="Z:/hibernate/lib_hibernate2/jsf-api.jar"/>
+	<classpathentry kind="lib" path="Z:/hibernate/lib_hibernate2/jsf-impl.jar"/>
+	<classpathentry kind="lib" path="Z:/hibernate/lib_hibernate2/jstl.jar"/>
+	<classpathentry kind="lib" path="Z:/hibernate/lib_hibernate2/log4j-1.2.8.jar"/>
+	<classpathentry kind="lib" path="Z:/hibernate/lib_hibernate2/mysql-connector-java-3.0.9-stable-bin.jar"/>
+	<classpathentry kind="lib" path="Z:/hibernate/lib_hibernate2/odmg-3.0.jar"/>
+	<classpathentry kind="lib" path="Z:/hibernate/lib_hibernate2/standard.jar"/>
+	<classpathentry kind="lib" path="Z:/hibernate/lib_hibernate2/firebirdsql-full.jar"/>
+	<classpathentry kind="lib" path="Z:/hibernate/c3p0-0.9.0.jar"/>
+	<classpathentry kind="output" path=""/>
+</classpath>

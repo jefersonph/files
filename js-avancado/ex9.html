@@ -1,0 +1,29 @@
+<html>
+  <head></head>
+  <body>
+    <form>
+      <select id="categoria">
+        <option value="">--escolha--</option>
+        <option value="livros">Livros</option>
+        <option value="informatica">Informática</option>
+        <option value="eletrodomesticos">Eletrodomésticos</option>
+      </select>
+      <select id="subcategoria"></select>
+    </form>
+    <script src="jquery.js"></script>
+    <script>
+      sub = $('#subcategoria').get(0)
+      $('#categoria').change(function(){
+        v = $(this).val()
+        sub.options.length = 0
+        $.getJSON(v+'.json', function(subcategorias){
+	  $(subcategorias).each(function(){
+            idx = sub.options.length
+            sub.options[idx] = new Option(this,this)
+          })
+        })
+      })
+      $('#categoria').change()
+    </script>
+  </body>
+</html>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS ENTITY="JSFProcess">
+ <PROCESS-ITEM ENTITY="JSFProcessGroup" NAME="rules:" SHAPE="32,40,53,42">
+  <PROCESS-ITEM ENTITY="JSFProcessItem" ID="rules::0" NAME="item">
+   <PROCESS-ITEM-OUTPUT ENTITY="JSFProcessItemOutput"
+    ID="go_home:#home.jsp" NAME="output" PATH="/home.jsp" SHAPE="-1,24"
+    TARGET="rules:#home.jsp" TITLE="go_home"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ENTITY="JSFProcessGroup" NAME="rules:*" PATH="*" SHAPE="32,129,0,0">
+  <PROCESS-ITEM ENTITY="JSFProcessItem" ID="rules:*:0" NAME="item" PATH="*">
+   <PROCESS-ITEM-OUTPUT ENTITY="JSFProcessItemOutput"
+    ID="go_sample1:#sample1.jsp" NAME="output" PATH="/sample1.jsp"
+    TARGET="rules:#sample1.jsp" TITLE="go_sample1"/>
+   <PROCESS-ITEM-OUTPUT ENTITY="JSFProcessItemOutput"
+    ID="go_sample2:#sample2.jsp" NAME="output1" PATH="/sample2.jsp"
+    SHAPE="-1,24" TARGET="rules:#sample2.jsp" TITLE="go_sample2"/>
+   <PROCESS-ITEM-OUTPUT ENTITY="JSFProcessItemOutput"
+    ID="go_aliasBean:#aliasBean.jsp" NAME="output2"
+    PATH="/aliasBean.jsp" SHAPE="-1,32" TARGET="rules:#aliasBean.jsp" TITLE="go_aliasBean"/>
+   <PROCESS-ITEM-OUTPUT ENTITY="JSFProcessItemOutput"
+    ID="go_buffer:#buffer.jsp" NAME="output3" PATH="/buffer.jsp"
+    SHAPE="-1,40" TARGET="rules:#buffer.jsp" TITLE="go_buffer"/>
+   <PROCESS-ITEM-OUTPUT ENTITY="JSFProcessItemOutput"
+    ID="go_dataTable:#dataTable.jsp" NAME="output4"
+    PATH="/dataTable.jsp" SHAPE="-1,48" TARGET="rules:#dataTable.jsp" TITLE="go_dataTable"/>
+   <PROCESS-ITEM-OUTPUT ENTITY="JSFProcessItemOutput"
+    ID="go_sortTable:#sortTable.jsp" NAME="output5"
+    PATH="/sortTable.jsp" SHAPE="-1,56" TARGET="rules:#sortTable.jsp" TITLE="go_sortTable"/>
+   <PROCESS-ITEM-OUTPUT ENTITY="JSFProcessItemOutput"
+    ID="go_selectbox:#selectbox.jsp" NAME="output6"
+    PATH="/selectbox.jsp" SHAPE="-1,64" TARGET="rules:#selectbox.jsp" TITLE="go_selectbox"/>
+   <PROCESS-ITEM-OUTPUT ENTITY="JSFProcessItemOutput"
+    ID="go_fileupload:#fileupload.jsp" NAME="output7"
+    PATH="/fileupload.jsp" SHAPE="-1,72" TARGET="rules:#fileupload.jsp" TITLE="go_fileupload"/>
+   <PROCESS-ITEM-OUTPUT ENTITY="JSFProcessItemOutput"
+    ID="go_tabbedPane:#tabbedPane.jsp" NAME="output8"
+    PATH="/tabbedPane.jsp" SHAPE="-1,80" TARGET="rules:#tabbedPane.jsp" TITLE="go_tabbedPane"/>
+   <PROCESS-ITEM-OUTPUT ENTITY="JSFProcessItemOutput"
+    ID="go_calendar:#calendar.jsp" NAME="output9" PATH="/calendar.jsp"
+    SHAPE="-1,88" TARGET="rules:#calendar.jsp" TITLE="go_calendar"/>
+   <PROCESS-ITEM-OUTPUT ENTITY="JSFProcessItemOutput"
+    ID="go_popup:#popup.jsp" NAME="output10" PATH="/popup.jsp"
+    SHAPE="-1,88" TARGET="rules:#popup.jsp" TITLE="go_popup"/>
+   <PROCESS-ITEM-OUTPUT ENTITY="JSFProcessItemOutput"
+    ID="go_jslistener:#jslistener.jsp" NAME="output11"
+    PATH="/jslistener.jsp" SHAPE="-1,80" TARGET="rules:#jslistener.jsp" TITLE="go_jslistener"/>
+   <PROCESS-ITEM-OUTPUT ENTITY="JSFProcessItemOutput"
+    ID="go_date:#date.jsp" NAME="output12" PATH="/date.jsp"
+    SHAPE="-1,72" TARGET="rules:#date.jsp" TITLE="go_date"/>
+   <PROCESS-ITEM-OUTPUT ENTITY="JSFProcessItemOutput"
+    ID="go_dataList:#dataList.jsp" NAME="output14" PATH="/dataList.jsp"
+    SHAPE="-1,64" TARGET="rules:#dataList.jsp" TITLE="go_dataList"/>
+   <PROCESS-ITEM-OUTPUT ENTITY="JSFProcessItemOutput"
+    ID="go_tree:#tree.jsp" NAME="output15" PATH="/tree.jsp"
+    SHAPE="-1,88" TARGET="rules:#tree.jsp" TITLE="go_tree"/>
+   <PROCESS-ITEM-OUTPUT ENTITY="JSFProcessItemOutput"
+    ID="go_tree2:#tree2.jsp" NAME="output16" PATH="/tree2.jsp"
+    SHAPE="-1,56" TARGET="rules:#tree2.jsp" TITLE="go_tree2"/>
+   <PROCESS-ITEM-OUTPUT ENTITY="JSFProcessItemOutput"
+    ID="go_treeTable:#treeTable.jsp" NAME="output17"
+    PATH="/treeTable.jsp" SHAPE="-1,80" TARGET="rules:#treeTable.jsp" TITLE="go_treeTable"/>
+   <PROCESS-ITEM-OUTPUT ENTITY="JSFProcessItemOutput"
+    ID="go_features:#features.jsp" NAME="output18" PATH="/features.jsp"
+    SHAPE="-1,48" TARGET="rules:#features.jsp" TITLE="go_features"/>
+   <PROCESS-ITEM-OUTPUT ENTITY="JSFProcessItemOutput"
+    ID="go_options:#options.jsp" NAME="output19" PATH="/options.jsp"
+    SHAPE="-1,72" TARGET="rules:#options.jsp" TITLE="go_options"/>
+   <PROCESS-ITEM-OUTPUT ENTITY="JSFProcessItemOutput"
+    ID="go_contact:#contact.jsp" NAME="output20" PATH="/contact.jsp"
+    SHAPE="-1,40" TARGET="rules:#contact.jsp" TITLE="go_contact"/>
+   <PROCESS-ITEM-OUTPUT ENTITY="JSFProcessItemOutput"
+    ID="go_copyright:#copyright.jsp" NAME="output21"
+    PATH="/copyright.jsp" TARGET="rules:#copyright.jsp" TITLE="go_copyright"/>
+   <PROCESS-ITEM-OUTPUT ENTITY="JSFProcessItemOutput"
+    ID="go_validate:#validate.jsp" NAME="output22" PATH="/validate.jsp"
+    TARGET="rules:#validate.jsp" TITLE="go_validate"/>
+   <PROCESS-ITEM-OUTPUT ENTITY="JSFProcessItemOutput"
+    ID="go_datascroller:#dataScroller.jsp" NAME="output24"
+    PATH="/dataScroller.jsp" TARGET="rules:#dataScroller.jsp" TITLE="go_datascroller"/>
+   <PROCESS-ITEM-OUTPUT ENTITY="JSFProcessItemOutput"
+    ID="go_panelstack:#panelstack.jsp" NAME="output25"
+    PATH="/panelstack.jsp" TARGET="rules:#panelstack.jsp" TITLE="go_panelstack"/>
+   <PROCESS-ITEM-OUTPUT ENTITY="JSFProcessItemOutput"
+    ID="go_css:#css.jsp" NAME="output26" PATH="/css.jsp"
+    TARGET="rules:#css.jsp" TITLE="go_css"/>
+   <PROCESS-ITEM-OUTPUT ENTITY="JSFProcessItemOutput"
+    ID="go_newspaperTable:#newspaperTable.jsp" NAME="output27"
+    PATH="/newspaperTable.jsp" TARGET="rules:#newspaperTable.jsp" TITLE="go_newspaperTable"/>
+   <PROCESS-ITEM-OUTPUT ENTITY="JSFProcessItemOutput"
+    ID="go_forceId:#forceId.jsp" NAME="output28" PATH="/forceId.jsp"
+    TARGET="rules:#forceId.jsp" TITLE="go_forceId"/>
+   <PROCESS-ITEM-OUTPUT ENTITY="JSFProcessItemOutput"
+    ID="go_swapimage:#swapimage.jsp" NAME="output29"
+    PATH="/swapimage.jsp" TARGET="rules:#swapimage.jsp" TITLE="go_swapimage"/>
+   <PROCESS-ITEM-OUTPUT ENTITY="JSFProcessItemOutput"
+    ID="go_selectOneCountry:#selectOneCountry.jsp" NAME="output30"
+    PATH="/selectOneCountry.jsp" TARGET="rules:#selectOneCountry.jsp" TITLE="go_selectOneCountry"/>
+   <PROCESS-ITEM-OUTPUT ENTITY="JSFProcessItemOutput"
+    ID="go_panelnavigation_1:#panelnavigation_1.jsp" NAME="output31"
+    PATH="/panelnavigation_1.jsp" SHAPE="-1,16"
+    TARGET="rules:#panelnavigation_1.jsp" TITLE="go_panelnavigation_1"/>
+   <PROCESS-ITEM-OUTPUT ENTITY="JSFProcessItemOutput"
+    ID="go_panelnavigation_1:#panelnavigation_2.jsp" NAME="output32"
+    PATH="/panelnavigation_2.jsp" TARGET="rules:#panelnavigation_2.jsp" TITLE="go_panelnavigation_1"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ENTITY="JSFProcessGroup" NAME="rules:#sample1.jsp"
+  PATH="/sample1.jsp" SHAPE="304,480,50,41">
+  <PROCESS-ITEM ENTITY="JSFProcessItem" ID="rules:#sample1.jsp:0"
+   NAME="item" PATH="/sample1.jsp">
+   <PROCESS-ITEM-OUTPUT ENTITY="JSFProcessItemOutput"
+    ID="jump_home:#home.jsp" NAME="output" PATH="/home.jsp"
+    SHAPE="-1,24" TARGET="rules:#home.jsp" TITLE="jump_home"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ENTITY="JSFProcessGroup" NAME="rules:#validate.jsp"
+  PATH="/validate.jsp" SHAPE="304,544,50,41">
+  <PROCESS-ITEM ENTITY="JSFProcessItem" ID="rules:#validate.jsp:0"
+   NAME="item" PATH="/validate.jsp">
+   <PROCESS-ITEM-OUTPUT ENTITY="JSFProcessItemOutput"
+    ID="valid:#home.jsp" NAME="output" PATH="/home.jsp" SHAPE="-1,24"
+    TARGET="rules:#home.jsp" TITLE="valid"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ENTITY="JSFProcessGroup" NAME="rules::1" SHAPE="48,1664,53,42">
+  <PROCESS-ITEM ENTITY="JSFProcessItem" ID="rules::1" NAME="item">
+   <PROCESS-ITEM-OUTPUT ENTITY="JSFProcessItemOutput"
+    ID="go_country:#countryForm.jsp" NAME="output"
+    PATH="/countryForm.jsp" SHAPE="-1,16"
+    TARGET="rules:#countryForm.jsp" TITLE="go_country"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ENTITY="JSFProcessGroup" NAME="rules::2" SHAPE="48,1760,53,42">
+  <PROCESS-ITEM ENTITY="JSFProcessItem" ID="rules::2" NAME="item">
+   <PROCESS-ITEM-OUTPUT ENTITY="JSFProcessItemOutput"
+    ID="go_edit_table:#countryTableForm.jsp" NAME="output"
+    PATH="/countryTableForm.jsp" SHAPE="-1,16"
+    TARGET="rules:#countryTableForm.jsp" TITLE="go_edit_table"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ENTITY="JSFProcessGroup"
+  NAME="rules:#countryTableForm.jsp" PATH="/countryTableForm.jsp" SHAPE="328,1784,50,41">
+  <PROCESS-ITEM ENTITY="JSFProcessItem"
+   ID="rules:#countryTableForm.jsp:0" NAME="item" PATH="/countryTableForm.jsp">
+   <PROCESS-ITEM-OUTPUT ENTITY="JSFProcessItemOutput"
+    ID="go_back:#masterDetail.jsp" NAME="output"
+    PATH="/masterDetail.jsp" SHAPE="-1,24"
+    TARGET="rules:#masterDetail.jsp" TITLE="go_back"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ENTITY="JSFProcessGroup" NAME="rules:#countryForm.jsp"
+  PATH="/countryForm.jsp" SHAPE="320,1688,50,57">
+  <PROCESS-ITEM ENTITY="JSFProcessItem" ID="rules:#countryForm.jsp:0"
+   NAME="item" PATH="/countryForm.jsp">
+   <PROCESS-ITEM-OUTPUT ENTITY="JSFProcessItemOutput"
+    ID="cancel:#masterDetail.jsp" NAME="output" PATH="/masterDetail.jsp"
+    SHAPE="-1,24" TARGET="rules:#masterDetail.jsp" TITLE="cancel"/>
+   <PROCESS-ITEM-OUTPUT ENTITY="JSFProcessItemOutput"
+    ID="ok_next:#masterDetail.jsp" NAME="output1"
+    PATH="/masterDetail.jsp" SHAPE="-1,24"
+    TARGET="rules:#masterDetail.jsp" TITLE="ok_next"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ENTITY="JSFProcessGroup" NAME="rules:#selectbox.jsp"
+  PATH="/selectbox.jsp" SHAPE="304,992,50,25"/>
+ <PROCESS-ITEM ENTITY="JSFProcessGroup" NAME="rules:#contact.jsp"
+  PATH="/contact.jsp" SHAPE="304,1616,50,25"/>
+ <PROCESS-ITEM ENTITY="JSFProcessGroup" NAME="rules:#calendar.jsp"
+  PATH="/calendar.jsp" SHAPE="304,1136,50,25"/>
+ <PROCESS-ITEM ENTITY="JSFProcessGroup" NAME="rules:#dataScroller.jsp"
+  PATH="/dataScroller.jsp" SHAPE="304,145,0,0"/>
+ <PROCESS-ITEM ENTITY="JSFProcessGroup" NAME="rules:#tree.jsp"
+  PATH="/tree.jsp" SHAPE="304,1376,50,25"/>
+ <PROCESS-ITEM ENTITY="JSFProcessGroup" NAME="rules:#css.jsp"
+  PATH="/css.jsp" SHAPE="304,192,50,25"/>
+ <PROCESS-ITEM ENTITY="JSFProcessGroup" NAME="rules:#sample2.jsp"
+  PATH="/sample2.jsp" SHAPE="304,752,50,25"/>
+ <PROCESS-ITEM ENTITY="JSFProcessGroup" NAME="rules:#copyright.jsp"
+  PATH="/copyright.jsp" SHAPE="304,240,50,25"/>
+ <PROCESS-ITEM ENTITY="JSFProcessGroup" NAME="rules:#date.jsp"
+  PATH="/date.jsp" SHAPE="304,1280,50,25"/>
+ <PROCESS-ITEM ENTITY="JSFProcessGroup" NAME="rules:#treeTable.jsp"
+  PATH="/treeTable.jsp" SHAPE="304,1472,50,25"/>
+ <PROCESS-ITEM ENTITY="JSFProcessGroup" NAME="rules:#tabbedPane.jsp"
+  PATH="/tabbedPane.jsp" SHAPE="304,1088,50,25"/>
+ <PROCESS-ITEM ENTITY="JSFProcessGroup"
+  NAME="rules:#selectOneCountry.jsp" PATH="/selectOneCountry.jsp" SHAPE="304,288,50,25"/>
+ <PROCESS-ITEM ENTITY="JSFProcessGroup" NAME="rules:#aliasBean.jsp"
+  PATH="/aliasBean.jsp" SHAPE="304,800,50,25"/>
+ <PROCESS-ITEM ENTITY="JSFProcessGroup" NAME="rules:#options.jsp"
+  PATH="/options.jsp" SHAPE="304,1568,50,25"/>
+ <PROCESS-ITEM ENTITY="JSFProcessGroup" NAME="rules:#home.jsp"
+  PATH="/home.jsp" SHAPE="544,64,50,25"/>
+ <PROCESS-ITEM ENTITY="JSFProcessGroup" NAME="rules:#newspaperTable.jsp"
+  PATH="/newspaperTable.jsp" SHAPE="304,336,50,25"/>
+ <PROCESS-ITEM ENTITY="JSFProcessGroup" NAME="rules:#jslistener.jsp"
+  PATH="/jslistener.jsp" SHAPE="304,1232,50,25"/>
+ <PROCESS-ITEM ENTITY="JSFProcessGroup" NAME="rules:#features.jsp"
+  PATH="/features.jsp" SHAPE="304,1520,50,25"/>
+ <PROCESS-ITEM ENTITY="JSFProcessGroup" NAME="rules:#popup.jsp"
+  PATH="/popup.jsp" SHAPE="304,1184,50,25"/>
+ <PROCESS-ITEM ENTITY="JSFProcessGroup"
+  NAME="rules:#panelnavigation_2.jsp" PATH="/panelnavigation_2.jsp" SHAPE="304,384,50,25"/>
+ <PROCESS-ITEM ENTITY="JSFProcessGroup" NAME="rules:#dataTable.jsp"
+  PATH="/dataTable.jsp" SHAPE="304,896,50,25"/>
+ <PROCESS-ITEM ENTITY="JSFProcessGroup" NAME="rules:#masterDetail.jsp"
+  PATH="/masterDetail.jsp" SHAPE="560,1712,50,25"/>
+ <PROCESS-ITEM ENTITY="JSFProcessGroup" NAME="rules:#swapimage.jsp"
+  PATH="/swapimage.jsp" SHAPE="304,432,50,25"/>
+ <PROCESS-ITEM ENTITY="JSFProcessGroup" NAME="rules:#forceId.jsp"
+  PATH="/forceId.jsp" SHAPE="304,608,50,25"/>
+ <PROCESS-ITEM ENTITY="JSFProcessGroup" NAME="rules:#panelstack.jsp"
+  PATH="/panelstack.jsp" SHAPE="304,656,50,25"/>
+ <PROCESS-ITEM ENTITY="JSFProcessGroup"
+  NAME="rules:#panelnavigation_1.jsp" PATH="/panelnavigation_1.jsp" SHAPE="304,704,50,25"/>
+ <PROCESS-ITEM ENTITY="JSFProcessGroup" NAME="rules:#sortTable.jsp"
+  PATH="/sortTable.jsp" SHAPE="304,944,50,25"/>
+ <PROCESS-ITEM ENTITY="JSFProcessGroup" NAME="rules:#buffer.jsp"
+  PATH="/buffer.jsp" SHAPE="304,848,50,25"/>
+ <PROCESS-ITEM ENTITY="JSFProcessGroup" NAME="rules:#tree2.jsp"
+  PATH="/tree2.jsp" SHAPE="304,1424,50,25"/>
+ <PROCESS-ITEM ENTITY="JSFProcessGroup" NAME="rules:#dataList.jsp"
+  PATH="/dataList.jsp" SHAPE="304,1328,50,25"/>
+ <PROCESS-ITEM ENTITY="JSFProcessGroup" NAME="rules:#fileupload.jsp"
+  PATH="/fileupload.jsp" SHAPE="304,1040,50,25"/>
+</PROCESS>

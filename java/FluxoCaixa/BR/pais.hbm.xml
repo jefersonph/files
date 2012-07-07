@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="BR">
+  <class name="pais" table="pais">
+  <id name="idpais" column="ID_PAIS" type="java.lang.Integer" length="11">
+  <generator class="increment"/>
+  </id>
+  <property name="nmpais" column="NM_PAIS" type="java.lang.String" not-null="true" length="20"/>
+  </class>
+</hibernate-mapping>

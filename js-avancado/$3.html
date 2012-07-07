@@ -1,0 +1,21 @@
+<html>
+  <head><head>
+  <body>
+    <div class="x">R</div>
+    <div class="x">G</div>
+    <div class="x">B</div>
+    <script src="jquery.js"></script>
+    <script>
+      cores = ['red','green','blue']
+      $('div.x').each(function(){
+        $(this).css('background', cores.shift())
+	alert( $(this).attr('class') )
+      })
+    </script>
+  </body>
+<html>
+
+
+
+
+

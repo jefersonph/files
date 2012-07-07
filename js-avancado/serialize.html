@@ -1,0 +1,24 @@
+<html>
+  <head></head>
+  <body>
+    <form id="s">
+      <input type="text" name="foo" /><br />
+      <select name="bar"><br />
+	<option value="baz">Baz</option>
+      </select><br />
+      <input type="checkbox" name="lorem" /><br />
+      <input type="radio" name="ipsum" value="a" />A<br />
+      <input type="radio" name="ipsum" value="b" />B<br />
+      <input type="radio" name="ipsum" value="c" />C<br />
+      <input type="submit" id="go" />
+    </form>
+    <script src="jquery.js"></script>
+    <script>
+      $('#s').submit(function(){
+         data = $(this).serialize()
+	 $.post('path-to-post.php', data, function(){ ... })
+         return false
+      })
+    </script>
+  </body>
+</html>

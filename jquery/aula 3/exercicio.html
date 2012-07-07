@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+	<head>		
+		<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
+		<title>Exercicios jQuery</title>
+		<style>
+			.souspan{
+				font-weight:bold;
+				font-size:18px;
+				color:green;
+			}
+			.spanVermelho{
+				color:red;
+			}
+			.spanComBorda{
+				border:solid 4px;
+			}
+			.irmao{
+				width:50px;
+				border:solid 1px;
+				padding:4px;
+				color:red;
+			}
+			.mais_velho{
+				width:100px;
+				border:solid 2px;
+				padding:4px;
+				color:blue;
+			}
+			.spanjeferson{
+				border:solid 3px gray;
+				color:blue;
+				display: none;
+			}
+			.lorenIpsun{
+				padding:4px;
+				width:250px;
+				border:solid 1px;
+			}
+			.box{
+				width:300px;
+				height:300px;
+				background:gray;
+				font-size:28px;
+			}
+		</style>
+		
+		<script type="text/javascript">
+			var target = {};
+			target.exercicios = {
+				funcao1 : function(){
+					alert('Primeira funcao \\o/');
+				},
+				funcao2 : function(){
+					alert('Segunda funcao \\o/');
+				},
+				funcao3 : function(){
+					$('#principal').prepend('<input style="color:red" type="button" value="Fui criado dinamicamente" class="botao_dinamico"><br>');
+				},
+				funcao4 : function(){
+					$('.botao_dinamico').remove();
+				},
+				funcao5 : function(objeto){
+					objeto.fadeOut("slow");
+				}
+			}
+			var botoes = {};
+			botoes.eventos = {
+				mouseover : function(){
+					$("#box").css({
+						border: '3px solid blue',
+						fontSize: '40px',
+						color: '#206CFF'
+				});
+				},
+				mouseout : function(){
+					$("#box").css({
+						border: '1px solid',
+						fontSize: '28px',
+						color: 'gray'
+				});
+				},
+				dbclick : function(){
+					//alert('terceira funcao \\o/');				
+				},
+				click : function(){
+					$("#box").css({
+						width: '25px',
+						height: '25px'					
+
+				});
+				},
+				mousedown : function(){
+					$('.irmao').remove();
+				},
+				mouseup : function(){
+					$("#box").append($("#tabela1 td:odd"));
+				},
+			}
+			
+			$(document).ready(function(){
+				//$("#botao1").bind('click', target.exercicios.funcao1);
+				//$("#botao2").bind('mouseover',function (){
+				//	target.exercicios.funcao2();
+				//	$("#botao1").unbind('click');	
+				//});
+				//$("#botao1").bind('mouseout',target.exercicios.funcao3);
+				//$('.botao_dinamico').live('click', target.exercicios.funcao4);	
+				$('#box').bind({
+					mouseover: botoes.eventos.mouseover,
+					mouseout: botoes.eventos.mouseout,
+					dbclick: botoes.eventos.dbclick,					
+					click: botoes.eventos.click,
+					mousedown: botoes.eventos.mousedown,
+					mouseup: botoes.eventos.mouseup,
+					});
+				$("#botao2").bind('click', function(){
+					$(".spanjeferson").fadeIn("slow");
+				});
+				$("#botao3").bind('click', function(){
+				target.exercicios.funcao5($(".spanjeferson"));
+				});
+			});
+		</script>
+	</head>
+<body>	
+<!--
+	Eventos
+	1 - Adicione um evento "click" no botao com id "botao1" que faça uma chamada ao metodo "funcao1" do objeto target.
+	2 - Adicione um evento "mouseover" ao botao com id "botao1" que execute uma chamada ao metodo "funcao2" do objeto target.
+		Além da chamada ao metodo, retire o evento "click" que faz a chamada para o metodo "funcao1".
+	3 - Adicione um evento "mouseout" ao botao com id "botao1" que execute uma chamada ao metodo "funcao3" do objeto target.
+	4 - Adicione um evento "click" a todos elementos que possuam a classe "botao_dinamico" que execute uma chamada ao metodo "funcao4" do objeto target.
+		Implemente o codigo deste método. O metodo deve remover todos os botoes com a classe "botao_dinamico"
+	5 - Adicione os eventos "mouseover","mouseout","dblclick","click","mousedown","mouseup" no elemento com id "box".
+		Para cada evento adicionado execute um método do objeto target, criado previamente.
+		Abaixo segue a descrição dos métodos:
+		mouseover - Aplicar uma borda solida de 3 px, Alterar o tamanho da fonte para 40px, e a cor da fonte para #206CFF
+		mouseout - Remover todos efeitos aplicados no mouseover, e alterar a cor de fundo para preto, e a cor da fonte para branco
+		dblclick - Inserir dentro do elemento todos inputs do tipo "button"
+		click - Diminuir o tamanho do elemento para 25 X 25
+		mousedown - Remover todos elementos com a classe "irmao"
+		mouseup - Inserir dentro do elemento a tabela com id="tabela2", porem apenas com as TDs impares.
+	
+	Efeitos
+	
+	1 - Crie um elemento HTML (<div>,<span>, etc) com seu nome e uma imagem dentro.
+	    Crie uma classe para esse elemento, definindo tamanho, borda, fonte, etc, a sua preferencia.
+		Faça com que esse elemento venha escondido por padrão, e que com o clique no botão de id "botao2" apareça com efeito fade
+	
+	2 - Crie um método no objeto target que receba por parametro um objeto que deve ser aplicado o efeito de fade para sumir.
+	3 - Crie um timer que oculte todas os TD's da tabela2, porém uma de cada vez a cada 500 milisegundos
+	4 - Faça o div com id="box" animar. Abaixo segue a descrição da animação:
+		O elemento deve se mover lentamente até a extremidade direita.
+		Ao mesmo tempo que se move, o elemento deve diminuir de tamanho, até chegar 25x25. E também deve ir aumentando o tamanho de sua borda até chegar a 10px
+
+	Super jQuery Master	
+	1- Crie um método no objeto target que randomize efeitos css e anime todos os elementos da pagina durante	
+-->
+<div id="principal">
+	<span class="spanjeferson">JEFERSON</span>
+	<input id="botao1" type="button" value="Botao 1">
+	<input id="botao2" type="button" value="Botao 2">
+	<input id="botao3" type="button" value="Botao 3">
+	<input id="botao4" type="button" value="Botao 4">
+	<input id="botao5" type="button" value="Botao 5">
+	<br>
+	<span class="souspan">Eu sou um belo SPAN (1)</span>
+	<span class="souspan">Eu sou um belo SPAN (2)</span>
+	<span class="souspan">Eu sou um belo SPAN (3)</span>
+	<span class="souspan">Eu sou um belo SPAN (4)</span>
+	
+	<div id="box" class="box">Sou uma caixa</div>
+	
+	<div id="sub_principal">
+		<div id="irmao1" class="irmao">Irmão 1</div>
+		<div id="irmao2" class="irmao">Irmão 2</div>
+		<div id="irmao3" class="irmao">Irmão 3</div>
+		<div id="irmao4" class="irmao">Irmão 4</div>
+		<div id="irmao5" class="irmao">Irmão 5</div>
+	</div>
+	
+	<div id="loren" class="lorenIpsun">
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+		text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+		It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+		It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
+		software like Aldus PageMaker including versions of Lorem Ipsum.
+	</div>
+	
+	<table id="tabela1" border="1">
+		<tr><td>TD #0</td><td>TD #1</td><td>TD #2</td></tr>
+		<tr><td>TD #3</td><td>TD #4</td><td>TD #5</td></tr>
+		<tr><td>TD #6</td><td>TD #7</td><td>TD #8</td></tr>
+	</table>
+	<br><br>
+	<table id="tabela2" border="1">
+		<tr><td>TD #0</td><td>TD #1</td><td>TD #2</td></tr>
+		<tr><td>TD #3</td><td>TD #4</td><td>TD #5</td></tr>
+		<tr><td>TD #6</td><td>TD #7</td><td>TD #8</td></tr>
+		<tr><td>TD #9</td><td>TD #10</td><td>TD #11</td></tr>
+		<tr><td>TD #12</td><td>TD #13</td><td>TD #14</td></tr>
+		<tr><td>TD #15</td><td>TD #16</td><td>TD #17</td></tr>
+		<tr><td>TD #18</td><td>TD #19</td><td>TD #20</td></tr>
+		<tr><td>TD #21</td><td>TD #22</td><td>TD #23</td></tr>
+		<tr><td>TD #24</td><td>TD #25</td><td>TD #26</td></tr>
+	</table>
+
+		
+</div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<html>
+ <head></head>
+ <body>
+  <script>
+    xhr = new XMLHttpRequest()
+    xhr.open('get', 'hello.txt', true)
+    xhr.onload = function(){
+      alert( xhr.responseText )
+    }
+    xhr.send(null)
+  </script>
+ </body>
+</html>
+
+

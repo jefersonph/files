@@ -1,0 +1,53 @@
+<html>
+<head>
+<style type='text/css'>
+	.ipt
+	{
+		background-color:yellow;
+		color: white;
+	}
+</style>
+<script>
+	function verifica(){
+		if(this.value.length > this.getAttribute('maxlength'))
+			this.value=this.value.substring(0,this.getAttribute('maxlength'));
+	}
+	function testaCSS(){
+		//alert(document.getElementById('nome').style.backgroundColor);
+		document.getElementById('nome').style.backgroundColor='blue';
+	}
+	function verificaNome(){
+		//alert(document.getElementById('nome').value);
+	}
+	function mudarCor(cor){
+		if(cor == 'red')
+			document.getElementById('senha').style.backgroundColor='red';
+		if(cor == 'yellow')
+			document.getElementById('senha').style.backgroundColor='yellow';
+	}
+	function testarOpcao(){
+		if(document.getElementById('nome').value.length < 8)
+			document.getElementById('nInvalida').style.visibility='visible';
+		else
+			document.getElementById('nInvalida').style.visibility='hidden';
+		if(document.getElementById('senha').value.length < 8)
+		    document.getElementById('sInvalida').style.visibility='visible';
+		else
+			document.getElementById('sInvalida').style.visibility='hidden';
+	}
+	
+</script>
+</head>
+<body onload="testaCSS();">
+	<ul>
+		<li style='visibility:hidden' id='nInvalida'>Nome Invalido</li>
+		<li style='visibility:hidden' id='sInvalida'>Senha Invalida</li>
+	</ul>
+	<form name='formulario'>
+		Nome: <input type='text' id='nome' class='ipt' name='nome' style='background-color:red;' onkeyup="verificaNome();"/><br/>
+		Senha: <input type='text' id='senha' class='ipt' name='senha' onmouseover="mudarCor('red');" onmouseout="mudarCor('yellow');"  /><br/><br/>
+		<textarea name='texto'rows="2" maxlength='11' cols="20"></textarea><br/>
+		<input type='button' value='clique aqui'onclick="testarOpcao()"/>
+	</form>	
+</body>
+</html>

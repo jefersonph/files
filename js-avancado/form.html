@@ -1,0 +1,30 @@
+<html>
+  <head></head>
+  <body>
+    <form>
+      <select id="ufs">
+        <option value="">--escolha--</option>
+        <option value="rs">RS</option>
+        <option value="sc">SC</option>
+        <option value="pr">PR</option>
+      </select>
+      <select id="cidades"></select>
+    </form>
+    <script src="jquery.js"></script>
+    <script>
+      select = $('#cidades').get(0)
+      $('#ufs').change(function(){
+        var uf = $(this).val()
+        // $.getJSON('cidades.php',{uf:uf})
+	select.options.length = 0
+        $.getJSON(uf+'.json', function(cidades){
+          $(cidades).each(function(){
+ 	    idx = select.options.length
+	    select.options[idx] = new Option(this,this)
+          })
+        })
+      })
+      $('#ufs').change()
+    </script>
+  </body>
+</html>

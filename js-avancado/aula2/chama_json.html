@@ -1,0 +1,21 @@
+<html>
+  <head><head>
+  <body>
+	
+    <div id="c">Clientes...</div>
+    <script>
+		xhr = new XMLHttpRequest();
+		xhr.open('get', 'clientes.json', true);
+		xhr.onload = function(){
+			c = document.getElementById('c');
+			c.innerHTML = '';
+			eval("clientes = " + xhr.responseText );
+			for (i in clientes){
+				cor = clientes[i]['aceita'] ? '#6f6' : '#f66'
+				c.innerHTML += '<div style="background:'+ cor +'">' + clientes[i].razao + "  -  " + clientes[i].cnpj +"<div />"
+			}
+		}
+		xhr.send(null);
+    </script>
+  </body>
+<html>

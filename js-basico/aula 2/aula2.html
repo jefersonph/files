@@ -1,0 +1,24 @@
+<html>
+	<head>
+	<style>
+		
+	</style>
+	<script>
+	function abrir()
+	{   
+		var url = document.getElementById('site').value;
+		document.getElementById('pagina').src=url;
+	}
+	</script>
+		
+	<body>
+		<input type='button' value='<' onclick="window.frames[0].history.back();" />
+		<input type='button' value='>' onclick="window.frames[0].history.forward();" />
+		Site: <input type='text' id='site' name='site' size='90'/>
+		<input type='button' value='ABRIR'onclick="abrir()"/>
+		<iframe src='iframe1.html' id='pagina' width='100%' height='500px'> </iframe>
+		
+	</body>
+	</head>
+</html>
+

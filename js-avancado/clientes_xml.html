@@ -1,0 +1,25 @@
+<html>
+  <head><head>
+  <body>
+    <div id="c">Aqui vão os clientes...</div>
+    <script>
+      xhr = new XMLHttpRequest()
+      xhr.onload = function(){
+	c = document.getElementById('c')
+	c.innerHTML = ''
+        xml = xhr.responseXML
+	cnpjs = xml.getElementsByTagName('cnpj')
+	for(i=0;i<cnpjs.length;i++){
+	  c.innerHTML += cnpjs[i].firstChild.nodeValue + "<br/>"
+	}
+      }
+      xhr.open('get', 'clientes.xml', true)
+      xhr.send(null)
+    </script>
+  </body>
+<html>
+
+
+
+
+

@@ -1,0 +1,21 @@
+Ex9:
+
+- Criar 3 jsons, com arrays de sub itens:
+  - livros
+    - romances
+    - auto ajuda
+    ...
+  - informatica
+    - pcs
+    - notebooks
+    ...
+  - eletrodomesticos
+    - tvs
+    - aspiradores
+    ...
+
+- Criar um HTML com 2 selectes (categoria e subcategoria). Onde categoria tem as opções livros, informatica e eletrodomesticos.
+
+- Ao trocar a categoria, deve repopular o select de subcategoria de acordo com os jsons.
+
+

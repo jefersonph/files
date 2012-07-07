@@ -1,0 +1,28 @@
+<html>
+  <head></head>
+  <body>
+    <form id="s">
+     Nome:<br />
+     <input type="text" name="nome" id="nome" /><br />
+     CNPJ:<br />
+     <input type="text" name="cnpj" id="cnpj" /><br />
+     Email:<br />
+     <input type="text" name="email" id="email" /><br />
+     <input type="submit" />
+    </form>
+    <script src="jquery.js"></script>
+    <script>
+      $('#s').submit(function(){
+        v = $(this).serialize()
+        $.getJSON('result.json',v,function(result){
+          if(result['ok']){
+            $('<div>Formulário enviado com sucesso.</div>').css('color','green').appendTo('#s')
+          }else{
+	    $('#'+result['campo']).css({'border':'2px solid red'}).after(result['mensagem'])
+          }
+        })
+        return false
+      })
+    </script>
+  </body>
+</html>

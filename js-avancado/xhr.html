@@ -1,0 +1,19 @@
+<html>
+ <head></head>
+ <body>
+  <script>
+    try{
+      xhr = new ActiveXObject("Microsoft.XMLHttp")
+    }catch(e){
+      try{
+        xhr = new ActiveXObject("MSXML2.XMLHttp")
+      }catch(e){
+        xhr = new XMLHttpRequest()
+      }
+    }
+    alert(xhr)
+  </script>
+ </body>
+</html>
+
+

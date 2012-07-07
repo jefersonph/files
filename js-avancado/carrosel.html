@@ -1,0 +1,28 @@
+<html>
+  <head></head>
+  <body>
+    <style>
+     #carrossel img{position:absolute;top:0px;left:0px}
+    </style>
+    <div id="carrossel">
+      <img src="star_wars_1.jpg" />
+      <img src="star_wars_2.jpg" style="display:none" />
+      <img src="star_wars_3.jpg" style="display:none" />
+      <img src="star_wars_4.jpg" style="display:none" />
+      <img src="star_wars_5.jpg" style="display:none" />
+    </div>
+    <script src="jquery.js"></script>
+    <script>
+      imgs = $('#carrossel img')
+      atual = 0
+      troca = function(){
+        imgs.eq(atual).fadeOut(2000)
+        atual++
+        if(atual >= imgs.length) atual = 0
+        imgs.eq(atual).fadeIn(2000)
+        setTimeout(troca, 4000)
+      }
+      setTimeout(troca, 4000)
+    </script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<html>
+  <head><head>
+  <body>
+	<div id="c">Clientes...</div>
+	<script>
+		xhr = new XMLHttpRequest();
+		xhr.open('get', 'clientes.xml', true);
+		xhr.onload = function(){
+			document.getElementById('c').innerHTML = ""
+			xml = xhr.responseXML;
+			cnpj = xml.getElementsByTagName('cnpj');
+			for(i=0; i < cnpj.length; i++){
+				document.getElementById('c').innerHTML += (cnpj[i].firstChild.nodeValue) + "<br/>";
+			}
+		}
+		xhr.send(null);
+    </script>
+  </body>
+<html>

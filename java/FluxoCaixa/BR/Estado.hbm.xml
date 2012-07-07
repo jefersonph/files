@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+<hibernate-mapping>
+ <class name="Estado" table="estado">
+  <id name="CdEstado" column="CD_ESTADO" type="java.lang.Integer" length="2">
+   <generator class="increment"/>
+  </id>
+  <!-- Criando uma referencia a classe pais, ao inves de usar a coluna idpais 
+<property name="IdPais" type="java.lang.Integer" column="ID_PAIS" length="11"/> -->
+  <property name="NmEstado" type="java.lang.String" column="NM_ESTADO" length="20"/>
+  <!-- Criando uma referencia a classe pais, ao inves de usar a coluna idpais -->
+  <many-to-one name="pais" class="BR.pais" column="ID_PAIS"/>
+ </class>
+</hibernate-mapping>

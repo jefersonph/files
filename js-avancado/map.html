@@ -1,0 +1,18 @@
+<html>
+ <head></head>
+ <body>
+  <script>
+     map = function(f,a){
+      new_a = []
+      for( i in a )
+        new_a.push( f(a[i]) )
+      return new_a
+    }
+    precos = [10, 8.50, 6.30, 25]
+    dez_porcento = function(v){ return v*1.1 }
+    alert( map(dez_porcento,precos)  )
+  </script>
+ </body>
+</html>
+
+

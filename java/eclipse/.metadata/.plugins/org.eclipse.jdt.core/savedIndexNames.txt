@@ -1,0 +1,9 @@
+Z:\Java II\eclipse\.metadata\.plugins\org.eclipse.jdt.core\1015834453.index
+Z:\Java II\eclipse\.metadata\.plugins\org.eclipse.jdt.core\3969840175.index
+Z:\Java II\eclipse\.metadata\.plugins\org.eclipse.jdt.core\2481311940.index
+Z:\Java II\eclipse\.metadata\.plugins\org.eclipse.jdt.core\3130565936.index
+Z:\Java II\eclipse\.metadata\.plugins\org.eclipse.jdt.core\2086605832.index
+Z:\Java II\eclipse\.metadata\.plugins\org.eclipse.jdt.core\596257081.index
+Z:\Java II\eclipse\.metadata\.plugins\org.eclipse.jdt.core\3927496509.index
+Z:\Java II\eclipse\.metadata\.plugins\org.eclipse.jdt.core\1140236069.index
+Z:\Java II\eclipse\.metadata\.plugins\org.eclipse.jdt.core\1342576934.index

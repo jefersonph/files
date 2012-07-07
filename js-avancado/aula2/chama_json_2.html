@@ -1,0 +1,26 @@
+<html>
+  <head><head>
+  <body>
+	
+    <div id="c">Comidas...</div>
+    <style>
+		.teste
+		{
+			width:60px;
+		}
+	</style>
+	<script>
+		xhr = new XMLHttpRequest();
+		xhr.open('get', 'clientes_2.json', true);
+		xhr.onload = function(){
+			var c = document.getElementById('c');
+			c.innerHTML = '';
+			eval("comida = " + xhr.responseText );
+			for (i in comida){
+				c.innerHTML += '<li class="teste" style="background: blue">' + comida[i].tipo + "</li>" + '<ul class="teste" style="background: gray">' + comida[i].quantidade +" </ul>"
+			}
+		}
+		xhr.send(null);
+    </script>
+  </body>
+<html>

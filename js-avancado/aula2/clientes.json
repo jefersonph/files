@@ -1,0 +1,5 @@
+[
+  {"cnpj":"123654","razao":"Target S/A","aceita":true},
+  {"cnpj":"983498","razao":"Trust S/A","aceita":true},
+  {"cnpj":"405950","razao":"ACME S/A","aceita":false}
+]

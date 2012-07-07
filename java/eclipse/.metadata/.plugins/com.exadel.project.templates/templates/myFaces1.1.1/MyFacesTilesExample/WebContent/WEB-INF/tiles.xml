@@ -1,0 +1,31 @@
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN"
+                                   "http://jakarta.apache.org/struts/dtds/tiles-config_1_1.dtd">
+
+<tiles-definitions>
+
+    <definition name="layout.example" path="/template/template.jsp" >
+        <put name="header" value="/common/header.jsp" />
+        <put name="menu" value="/common/navigation.jsp" />
+    </definition>
+
+    <definition name="/page1.tiles" extends="layout.example" >
+        <put name="body" value="/page1.jsp" />
+    </definition>
+
+    <definition name="/page2.tiles" extends="layout.example" >
+        <put name="body" value="/page2.jsp" />
+    </definition>
+
+<!-- workaround for non-tiles JSF pages-->
+    <definition name="non.tiles1" path="/non-tile.jsp" />	
+
+<!-- nested tiles definition -->
+    <definition name="nested.example" path="/template/template2.jsp" >
+        <put name="nested1" value="/common/nested1.jsp" />
+        <put name="nested2" value="/common/nested2.jsp" />
+    </definition>
+    <definition name="/page4.tiles" extends="layout.example" >
+        <put name="body" value="nested.example" />
+    </definition>
+
+</tiles-definitions>

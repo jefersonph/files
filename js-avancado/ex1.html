@@ -1,0 +1,14 @@
+<html>
+ <head></head>
+ <body>
+  <input type="text" id="c" />
+  <button id="x">Go!</button>
+  <div id="y">DIV</div>
+  <script>
+    document.getElementById('x').onclick = function(){
+       cor = document.getElementById('c').value
+       document.getElementById('y').style.background = cor
+    }
+  </script>
+ </body>
+</html>

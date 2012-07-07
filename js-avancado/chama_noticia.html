@@ -1,0 +1,18 @@
+<html>
+  <head><head>
+  <body>
+    <button id="go">Go!</button>
+    <div id="news">Aqui vai a notícia...</div>
+    <script>
+      xhr = new XMLHttpRequest()
+      xhr.open('get', 'noticia.html', true)
+      xhr.onload = function(){
+        news = document.getElementById('news')
+        news.innerHTML = xhr.responseText
+      }
+      document.getElementById('go').onclick = function(){
+        xhr.send(null)
+      }
+    </script>
+  </body>
+<html>

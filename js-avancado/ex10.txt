@@ -1,0 +1,14 @@
+Ex10.
+
+- Crie um form com nome, email e cnpj.
+- "Envie" o form por ajax, usando getJSON
+  getJSON(caminho,dados,função)
+- O json de retorno deve ser como o exemplo:
+  - sucesso:
+  {"ok":true}
+  - erro:
+  {"ok":false,"campo":"email","mensagem":"Email inválido"}
+  {"ok":false,"campo":"cnpj","mensagem":"CNPJ inexistente"}
+
+- Ao receber um json, se for ok, apresentar uma confirmação em verde. Se não for, marcar o campo correspondente com borda vermelha e apresentar ao lado a mensagem de erro.
+  border: 2px solid red

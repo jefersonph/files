@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS ENTITY="JSFProcess">
+ <PROCESS-ITEM ENTITY="JSFProcessGroup" NAME="rules:*" PATH="*" SHAPE="32,17,0,0">
+  <PROCESS-ITEM ENTITY="JSFProcessItem" ID="rules:*:0" NAME="item" PATH="*">
+   <PROCESS-ITEM-OUTPUT ENTITY="JSFProcessItemOutput"
+    ID="nav_page1:#page1.jsp" NAME="output" PATH="/page1.jsp"
+    SHAPE="-1,24" TARGET="rules:#page1.jsp" TITLE="nav_page1"/>
+   <PROCESS-ITEM-OUTPUT ENTITY="JSFProcessItemOutput"
+    ID="nav_page2:#page2.jsp" NAME="output1" PATH="/page2.jsp"
+    SHAPE="-1,16" TARGET="rules:#page2.jsp" TITLE="nav_page2"/>
+   <PROCESS-ITEM-OUTPUT ENTITY="JSFProcessItemOutput"
+    ID="nav_page3:#non-tile.jsp" NAME="output2" PATH="/non-tile.jsp"
+    SHAPE="-1,24" TARGET="rules:#non-tile.jsp" TITLE="nav_page3"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ENTITY="JSFProcessGroup" NAME="rules:#non-tile.jsp"
+  PATH="/non-tile.jsp" SHAPE="240,216,50,41">
+  <PROCESS-ITEM ENTITY="JSFProcessItem" ID="rules:#non-tile.jsp:0"
+   NAME="item" PATH="/non-tile.jsp">
+   <PROCESS-ITEM-OUTPUT ENTITY="JSFProcessItemOutput"
+    ID="back:#page1.jsp" NAME="output" PATH="/page1.jsp"
+    SHAPE="289,248,296,248,296,176,224,176,224,128,239,128"
+    TARGET="rules:#page1.jsp" TITLE="back"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ENTITY="JSFProcessGroup" NAME="rules:#page1.jsp"
+  PATH="/page1.jsp" SHAPE="240,120,50,25"/>
+ <PROCESS-ITEM ENTITY="JSFProcessGroup" NAME="rules:#page2.jsp"
+  PATH="/page2.jsp" SHAPE="240,56,50,25"/>
+</PROCESS>

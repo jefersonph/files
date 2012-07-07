@@ -1,0 +1,28 @@
+<html>
+  <head><head>
+  <body>
+    <button id="rs">RS</button>
+    <button id="sc">SC</button>
+    <button id="pr">PR</button>
+    <div id="c">Aqui vão as cidades...</div>
+    <script>
+      xhr = new XMLHttpRequest()
+      xhr.onload = function(){
+        c = document.getElementById('c')
+        c.innerHTML = xhr.responseText
+      }
+      chama = function(){
+        xhr.open('get', this.id+'.html', true)
+        xhr.send(null)
+      }
+      document.getElementById('rs').onclick = chama
+      document.getElementById('sc').onclick = chama
+      document.getElementById('pr').onclick = chama
+    </script>
+  </body>
+<html>
+
+
+
+
+

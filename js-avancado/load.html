@@ -1,0 +1,17 @@
+<html>
+  <head></head>
+  <body>
+    <button id="bt">Carregar</button>
+    <div id="news">Aqui...</div>
+
+    <script src="jquery.js"></script>
+    <script>
+      $('#bt').click(function(){
+        $('#news').html('<img src="ajax-loader.gif" />')
+	setTimeout(function(){
+          $('#news').load('noticia.html')
+        }, 1800)
+      })
+    </script>
+  </body>
+</html>

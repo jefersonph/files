@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<clientes>
+	<cliente>
+		<cnpj>123654</cnpj>
+		<razao>Target S/A</razao>
+		<aceita>true</aceita>
+	</cliente>
+	<cliente>
+		<cnpj>983498</cnpj>
+		<razao>Ttrust S/A</razao>
+		<aceita>true</aceita>
+	</cliente>
+	<cliente>
+		<cnpj>405950</cnpj>
+		<razao>ACME S/A</razao>
+		<aceita>false</aceita>
+	</cliente>
+</clientes>

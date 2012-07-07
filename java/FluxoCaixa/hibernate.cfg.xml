@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-2.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!-- Database connection settings -->
+        <property name="connection.driver_class">org.firebirdsql.jdbc.FBDriver</property>
+        <property name="connection.url">jdbc:firebirdsql:localhost:C:/Documents and Settings/a052002187/Desktop/IBOConsole/FLUXOCAIXA</property>
+        <property name="connection.username">sysdba</property>
+        <property name="connection.password">masterkey</property>
+	 <!-- JDBC connection pool (use the built-in) -->
+         <property name="c3p0.acquire_increment">1</property> 
+		<property name="c3p0.idle_test_period">100</property>
+	<property name="c3p0.max_size">100</property> 
+	<property name="c3p0.max_statements">10</property> 
+	<property name="c3p0.min_size">10</property> 
+	<property name="c3p0.timeout">100</property>
+
+        <!-- SQL dialect -->
+        <property name="dialect">net.sf.hibernate.dialect.InterbaseDialect</property>
+        <!-- Echo all executed SQL to stdout -->
+        <property name="show_sql">true</property>
+        <mapping resource="BR/pais.hbm.xml"/>
+        <mapping resource="BR/Estado.hbm.xml"/>
+    </session-factory>
+</hibernate-configuration>

@@ -1,0 +1,31 @@
+<html>
+  <head><head>
+  <body>
+    <button id="rs">RS!</button>
+	<button id="sc">SC!</button>
+	<button id="pr">PR!</button>
+    <div id="cidades">CIDADES...</div>
+    <script>
+      xhr = new XMLHttpRequest()
+       xhr.onload = function(){
+			 cid = document.getElementById('cidades')
+			 cid.innerHTML = xhr.responseText
+      }
+	  
+	  document.getElementById('rs').onclick = function(){
+         xhr.open('get', 'rs.html', true)
+		xhr.send(null)
+      }
+		      
+	  document.getElementById('sc').onclick = function(){
+         xhr.open('get', 'sc.html', true)
+         xhr.send(null)
+      }
+	  document.getElementById('pr').onclick = function(){
+        xhr.open('get', 'pr.html', true)
+		xhr.send(null)
+	  }
+
+    </script>
+  </body>
+<html>

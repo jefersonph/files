@@ -1,0 +1,139 @@
+<html>
+<body style='font-family: Arial;'>
+Dado o formulário abaixo, faça as seguindes atividades: (as respostas estão comentadas no código)<br/>
+<textarea style='width:600px;height:380px;font-family:Tahoma, Arial;' readonly>
+<form name='formulario'>
+	<label for='nome'>Nome</label>
+	<input type='text' id='nome' name='nome' /><br/>
+	<label for='idade'>Idade</label>
+	<input type='text' id='idade' name='idade' /><br/>
+	Sexo
+	<input type='radio' id='sexo' name='sexo' value='F' />
+	Feminino 
+	<input type='radio' id='sexo' name='sexo' value='M' />
+	Masculino<br/>
+	Cidade
+	<select name='cidade'>
+		<option value='poa'>Porto Alegre</option>
+		<option value='sp'>S&atilde;o Paulo</option>
+		<option value='rj'>Rio de Janeiro</option>
+	</select>
+	<br/>
+	<input type='submit' value='Enviar'>
+</form></textarea>
+<fieldset style='width:570px;'>
+	<legend><b>Output do codigo citado</b></legend>
+<center>
+<form name='formulario'>
+	<label for='nome'>Nome</label> <input type='text' id='nome' name='nome' /><br/>
+	<label for='idade'>Idade</label> <input type='text' id='idade' name='idade' /><br/>
+	Sexo <input type='radio' id='sexo' name='sexo' value='F' />Feminino <input type='radio' id='sexo' name='sexo' value='M' />Masculino<br/>
+	Cidade
+	<select name='cidade'>
+		<option value='poa'>Porto Alegre</option>
+		<option value='sp'>S&atilde;o Paulo</option>
+		<option value='rj'>Rio de Janeiro</option>
+	</select>
+	<br/>
+	<input type='submit' value='Enviar'>
+</form></center>
+</fieldset>
+
+1) Faça acontecer um alerta indicando a quantidade de elementos que há, dentro do formulário.<br/>
+<div><textarea style='width:600px;'></textarea><input type='button' onclick="eval(this.parentNode.getElementsByTagName('textarea')[0].value)" value='Testar'/></div><br/>
+<!-- RESPOSTA
+alert(
+document.forms['formulario'].elements.length
+);
+-->
+
+2) Faça acontecer um alerta indicando o que foi digitado no campo nome.<br/>
+<div><textarea style='width:600px;'></textarea><input type='button' onclick="eval(this.parentNode.getElementsByTagName('textarea')[0].value)" value='Testar'/></div><br/>
+<!-- RESPOSTA
+alert( document.forms['formulario'].nome.value );
+-->
+
+3) Dê um alerta indicando se o que foi digitado no campo idade é um número ou não.<br/>
+<div><textarea style='width:600px;'></textarea><input type='button' onclick="eval(this.parentNode.getElementsByTagName('textarea')[0].value)" value='Testar'/></div><br/>
+<!-- RESPOSTA
+maneira um:
+	if(isNaN(document.forms['formulario'].idade.value))
+	    alert('Nao é um numero');
+	else
+	    alert('É um numero')
+
+maneira dois:
+alert(!isNaN(document.forms[0].idade.value));
+
+maneira tres:
+alert((isNaN(document.forms[0].idade.value)? 'Nao é um numero': 'é um numero'));
+-->
+
+4) Exiba uma mensagem de alerta indicando a quantidade de opções que há, no item Cidade.<br/>
+<div><textarea style='width:600px;'></textarea><input type='button' onclick="eval(this.parentNode.getElementsByTagName('textarea')[0].value)" value='Testar'/></div><br/>
+<!-- RESPOSTA
+alert(
+	document.forms[0].cidade.getElementsByTagName('option').length
+);
+-->
+
+5) Exiba uma mensagem alertando a idade digitara, somada a 0 (ex: digitando 1, a mensagem será 11).<br/>
+<div><textarea style='width:600px;'></textarea><input type='button' onclick="eval(this.parentNode.getElementsByTagName('textarea')[0].value)" value='Testar'/></div><br/>
+<!-- RESPOSTA
+alert(
+	parseInt(document.forms[0].idade.value) + 10
+);
+-->
+
+6) Dê um alerta indicando o sexo selecionado.<br/>
+<div><textarea style='width:600px;'></textarea><input type='button' onclick="eval(this.parentNode.getElementsByTagName('textarea')[0].value)" value='Testar'/></div><br/>
+<!-- RESPOSTA
+Maneira um:
+alert(
+    (document.forms[0].sexo[0].checked)? 'Feminino': 'Masculino'
+);
+
+Maneira dois:
+    if(!document.forms[0].sexo[0].checked
+       &&
+       !document.forms[0].sexo[1].checked)
+    {
+        alert('Selecione um sexo');
+    }else{
+        alert((document.forms[0].sexo[0].checked)? 'Feminino': 'Masculino');
+    }
+-->
+
+7) Crie uma função que retorne se a idade é par ou impar.<br/>
+Em seguida, chame esta função, dando um alerta de seu retorno
+<div><textarea style='width:600px; height:180px;'></textarea><input type='button' onclick="eval(this.parentNode.getElementsByTagName('textarea')[0].value)" value='Testar'/></div><br/>
+<!-- RESPOSTA
+function teste(){
+    var age= document.getElementById('idade').value;
+    age= parseInt(age);
+    if(age%2 == 0)
+        return 'par';
+    else
+        return 'impar';
+}
+alert( teste() );
+-->
+
+6) Via javascript, altere:<br/>
+<ul>
+	<li>a cor de fundo do input do nome para amarelo;</li>
+	<li>a cor da fonte, no input da idade, para vermelho;</li>
+	<li>a borda do select da cidade, para vermelha;</li>
+	<li>e faça o botão do submit ficar desativado</li>
+</ul>
+<div><textarea style='width:600px;height:120px;'></textarea><input type='button' onclick="eval(this.parentNode.getElementsByTagName('textarea')[0].value)" value='Testar'/></div><br/>
+<!-- RESPOSTA
+  document.forms[0].nome.style.backgroundColor= 'yellow';
+  document.forms[0].idade.style.color= '#ff0000';
+  document.forms[0].cidade.style.border= 'solid 1px red';
+  document.forms[0].elements[5].disabled= 'disabled';
+  // este ultimo, também poderia ser assim:
+  // document.forms[0].elements[5].setAttribute('disabled', 'disabled');
+-->
+</body>
+</html>

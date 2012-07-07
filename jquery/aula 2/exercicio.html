@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>		
+		<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
+		<title>Exercicios jQuery</title>
+		<style>
+			.souspan{
+				font-weight:bold;
+				font-size:18px;
+				color:green;
+			}
+			.spanVermelho{
+				color:red;
+			}
+			.spanComBorda{
+				border:solid 4px;
+			}
+			.irmao{
+				width:50px;
+				border:solid 1px;
+				padding:4px;
+				color:red;
+			}
+			.mais_velho{
+				width:100px;
+				border:solid 2px;
+				padding:4px;
+				color:blue;
+			}
+			.lorenIpsun{
+				padding:4px;
+				width:250px;
+				border:solid 1px;
+			}
+		</style>
+		<script type="text/javascript">
+		$(document).ready(function(){
+		//console.log($("#principal > span").length); //exercicio 1
+		//console.log($("#principal > span").eq(2).addClass("spanVermelho")); exercicio 2
+		//$("#principal > span").removeClass("souspan"); exercicio 3
+		//$("#principal > *").eq(1).html("Eu era um belo Span");  exercicio 4		 
+		//$("#principal > span").eq(3).remove(); exercicio 5
+		//$("#principal").append("<div>TESTE DIV JQUERY</div>"); exercicio 6
+		//$("#irmao3")
+		//$("#loren").text().replace('Lorem','opa');
+		//$("#loren").css("border" , "3px solid blue"); exercicio 9
+		//$("#principal > *").remove();  // exercicio 10.. errado
+		$("#tabela1 > *").children().children().slice(7,9).css({
+			color: 'red',
+		    width: '150px',
+			border: 'solid 1px',
+		});
+		});// exercicio 11
+		
+		
+		</script>
+	</head>
+
+<body>	
+<!--
+	1  - Executar um alerta com o total de elementos <spans> filhos do elemento com id='principal'.
+	2  - Adicionar a classe "spanVermelho" ao terceiro <span> filho do elemento com id='principal'.
+	3  - Remover a classe "souspan" de todos os <spans> filhos do elemento com id='principal' e adicionar a classe "spanComBorda" no primeiro e terceiro filho.
+	4  - Alterar o texto do primeiro e terceiro filho do elemento com id='principal' para "Eu era um belo Span".
+	5  - Remover o 4° <span> do elemento com id='principal'.
+	6  - Adicionar um elemento <div> com o seu nome dentro do elemento principal.
+	7  - Adicione aos irmãos(a direita) do elemento com id="irmao3" a classe "mais_velho".
+	8  - Procure no elemento com id="loren" a palavra "loren" e substitua todas ocorrencias encontradas pelo seu nome.	
+	9  - Troque o estilo da borda do elemento com id="loren"	
+	10 - Remova todos os elementos do elemento com id="principal" e escreva seu nome dentro
+	11 - Coloque um fundo vermelho, altere o tamanho e cor da borda, o tipo e cor da fonte das 4 ultimas TD's da tabela com id tabela1. (Sem usar o método eq())
+	12 - Retire todos estilos aplicados no exercicio 11, e adicione o mesmo para as 4 primeiras TD's. (Sem usar o método eq())
+	13 - Mude a cor de fundo de todas as TD's com indice ímpar da tabela com id tabela2
+-->
+<div id="principal">
+	<span class="souspan">Eu sou um belo SPAN (1)</span>
+	<span class="souspan">Eu sou um belo SPAN (2)</span>
+	<span class="souspan">Eu sou um belo SPAN (3)</span>
+	<span class="souspan">Eu sou um belo SPAN (4)</span>
+	
+	<div id="sub_principal">
+
+		<div id="irmao1" class="irmao">Irmão 1</div>
+		<div id="irmao2" class="irmao">Irmão 2</div>
+		<div id="irmao3" class="irmao">Irmão 3</div>
+		<div id="irmao4" class="irmao">Irmão 4</div>
+		<div id="irmao5" class="irmao">Irmão 5</div>
+	</div>
+
+	
+	<div id="loren" class="lorenIpsun">
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+		text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+		It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+		It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
+		software like Aldus PageMaker including versions of Lorem Ipsum.
+	</div>
+	
+	<table id="tabela1" border="1">
+		<tr><td>TD #0</td><td>TD #1</td><td>TD #2</td></tr>
+		<tr><td>TD #3</td><td>TD #4</td><td>TD #5</td></tr>
+
+		<tr><td>TD #6</td><td>TD #7</td><td>TD #8</td></tr>
+	</table>
+	<br><br>
+	<table id="tabela2" border="1">
+		<tr><td>TD #0</td><td>TD #1</td><td>TD #2</td></tr>
+		<tr><td>TD #3</td><td>TD #4</td><td>TD #5</td></tr>
+
+		<tr><td>TD #6</td><td>TD #7</td><td>TD #8</td></tr>
+		<tr><td>TD #9</td><td>TD #10</td><td>TD #11</td></tr>
+		<tr><td>TD #12</td><td>TD #13</td><td>TD #14</td></tr>
+		<tr><td>TD #15</td><td>TD #16</td><td>TD #17</td></tr>
+
+		<tr><td>TD #18</td><td>TD #19</td><td>TD #20</td></tr>
+		<tr><td>TD #21</td><td>TD #22</td><td>TD #23</td></tr>
+		<tr><td>TD #24</td><td>TD #25</td><td>TD #26</td></tr>
+	</table>
+
+		
+</div>
+</body>
+</html>

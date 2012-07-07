@@ -1,0 +1,30 @@
+<html>
+<head>
+<style>
+	.teste{
+		font-size:20px;
+	}
+</style>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
+
+</head>
+<body>
+	<ul >
+		<li id="x" class="teste">RS1</li>
+	</ul>
+	<script>
+     $('#x').mouseover(function(){
+		styles = {
+            fontSize: '40px',
+		}
+			$('#x').animate(styles)
+      })
+	  $('#x').mouseout(function(){
+		styles = {
+            fontSize: '20px',
+		}
+			$('#x').animate(styles)
+      })
+    </script>
+</body>
+</html>

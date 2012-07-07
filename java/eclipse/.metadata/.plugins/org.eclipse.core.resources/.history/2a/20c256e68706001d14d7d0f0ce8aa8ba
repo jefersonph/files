@@ -1,0 +1,35 @@
+import javax.swing.*;        
+import java.awt.FlowLayout;
+import java.awt.event.*;
+
+public class exemplo1 implements ActionListener {
+
+public void actionPerformed(ActionEvent e) {
+System.out.println("Button pressed 1");
+}
+
+    public void criar() {
+
+        //Cria e configura a janela
+        JFrame frame = new JFrame("HelloWorldSwing");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setLayout( new FlowLayout() ); // configura o layout do frame
+
+
+        //Cria e adiciona o label com "Hello World"
+        JLabel label = new JLabel("Hello World");
+        frame.getContentPane().add(label);
+JButton b1 = new JButton("Submit");
+JButton b2 = new JButton("Cancel");
+
+b1.addActionListener(this);
+b2.addActionListener(this);
+
+        frame.getContentPane().add(b1);
+        frame.getContentPane().add(b2);
+
+        frame.pack();
+        frame.setVisible(true);
+    }
+}
+

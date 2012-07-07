@@ -1,0 +1,969 @@
+.edit{
+margin-top: 10px;
+}
+
+.bold{
+    font-size: small;
+    font-weight: bold;
+}
+#fora{
+border: 1px solid #789bce;
+WIDTH: 804px;
+HEIGHT: 600px;
+}
+
+#file{
+border: 1px solid #789bce;
+WIDTH: 400px;
+HEIGHT: 600px;
+float: left;
+no-repeat left top;
+overflow: auto; 
+position: relative;
+}
+
+#file pre{
+font-family: inherit !important;
+}
+
+#file2{
+border: 1px solid #789bce;
+WIDTH: 400px;
+HEIGHT: 600px;
+float: left;
+no-repeat left top;
+overflow: auto; 
+position: relative;
+}
+#file2 pre{
+font-family: inherit !important;
+}
+
+#info_user {
+	float: right;	
+}
+#info_user li{
+	color:rgb(0,0,255);
+	margin-left: 15px;
+	margin-right: 15px;
+	color: #000000;
+	FONT-WEIGHT: bold;
+}
+LI {
+	FONT-WEIGHT: normal; FONT-SIZE: xx-small; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: verdana, geneva, arial, helvetica, sans-serif
+}
+H2 {
+	MARGIN-TOP: 0px; FONT-WEIGHT: bold; FONT-SIZE: x-small; MARGIN-BOTTOM: 0.5em; COLOR: #000000; FONT-FAMILY: verdana, geneva, arial, helvetica, sans-serif
+}
+.vign-headerLogo {
+	/*BACKGROUND-IMAGE: url(../img/logo_carnaval.png); BACKGROUND-REPEAT: no-repeat;*/
+}
+.vign-headerBackground {
+	BACKGROUND-IMAGE: url(../img/background_main.gif); BACKGROUND-REPEAT: repeat-x;
+}
+.vign-rightside-header {
+	BACKGROUND-POSITION: right 50%; BACKGROUND-IMAGE: url(../img/title_content_limpo.gif); BACKGROUND-REPEAT: no-repeat; TEXT-ALIGN: right
+}
+.vign-rightside-header-jobconsole {
+	BACKGROUND-POSITION: right 50%; BACKGROUND-IMAGE: url(../img/title_content_jobconsole.gif); BACKGROUND-REPEAT: no-repeat; TEXT-ALIGN: right
+}
+#vign-headerTitle {
+	PADDING-RIGHT: 15px; PADDING-LEFT: 15px; FONT-WEIGHT: bold; FONT-SIZE: x-small; PADDING-BOTTOM: 2px; COLOR: #fff; PADDING-TOP: 2px; WHITE-SPACE: nowrap; HEIGHT: 23px
+}
+.vign-headerInput {
+	BORDER-RIGHT: #5184d0 1px inset; BORDER-TOP: #5184d0 1px inset; FONT-SIZE: 9px; MARGIN: 2px 0px 0px; BORDER-LEFT: #5184d0 1px inset; BORDER-BOTTOM: #5184d0 1px inset; FONT-FAMILY: verdana, geneva, arial, helvetica, sans-serif; BACKGROUND-COLOR: #e0ebfc
+}
+.vign-rightside {
+	TEXT-ALIGN: right
+}
+.vign-navbar {
+	BACKGROUND-IMAGE: url(../img/background_bar.gif)
+}
+#vign-navcontainer .first_item {
+	BORDER-RIGHT: #275dad 1px solid; PADDING-RIGHT: 10px; HEIGHT: 23px
+}
+#vign-navcontainer .empty_item {
+	BORDER-RIGHT: #275dad 1px solid; PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 0px; BORDER-LEFT: #7aa4e4 1px solid; PADDING-TOP: 0px; HEIGHT: 23px
+}
+#vign-navcontainer {
+	
+}
+#vign-navcontainer UL {
+	FLOAT: right; MARGIN: 0px; WHITE-SPACE: nowrap; LIST-STYLE-TYPE: none; HEIGHT: 23px
+}
+#vign-navcontainer UL LI {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; COLOR: #fff; LINE-HEIGHT: 22px; PADDING-TOP: 0px
+}
+#vign-navcontainer UL LI A {
+	BORDER-RIGHT: #275dad 1px solid; PADDING-RIGHT: 10px; DISPLAY: block; PADDING-LEFT: 10px; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; BORDER-LEFT: #7aa4e4 1px solid; WIDTH: 10px; COLOR: #fff; PADDING-TOP: 0px; WHITE-SPACE: nowrap; HEIGHT: 23px; TEXT-DECORATION: none
+}
+#vign-navcontainer UL LI A:hover {
+	BORDER-RIGHT: #7aa4e4 1px solid; BACKGROUND-IMAGE: url(../img/background_bar_inverse.gif); BORDER-LEFT: #275dad 1px solid
+}
+#vign-menucontainer {
+	BORDER-BOTTOM: #89a3ca 1px solid; HEIGHT: 21px; BACKGROUND-COLOR: #9ebae4
+}
+#vign-menucontainer .last_item {
+	BORDER-LEFT: #d5effd 1px solid; HEIGHT: 21px
+}
+#vign-menucontainer UL {
+	MARGIN: 0px; WHITE-SPACE: nowrap; LIST-STYLE-TYPE: none
+}
+#vign-menucontainer UL LI {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; LINE-HEIGHT: 21px; PADDING-TOP: 0px; TEXT-ALIGN: center
+}
+
+#vign-menucontainer ul li a
+{
+display: block;
+height: 21px;
+width:auto !important;
+width /**/:10px;
+padding: 0 10px;
+color: #000;
+text-decoration: none;
+white-space:nowrap;
+font-weight:bold;
+border-left: 1px solid #c4d7f2;
+border-right: 1px solid #789bce;
+}
+
+
+#vign-menucontainer UL LI A:hover {
+	BORDER-RIGHT: #c4d7f2 1px solid; BORDER-LEFT: #789bce 1px solid; BACKGROUND-COLOR: #88a9d9
+}
+.vign-menucontainer-hover-class {
+	BORDER-RIGHT: #cddff7 0px solid; BORDER-LEFT: #cedff7 0px solid; BACKGROUND-COLOR: #cddff7
+}
+.vign-floatLeft {
+	DISPLAY: inline; FLOAT: left
+}
+.vign-floatRight {
+	DISPLAY: inline; FLOAT: right
+}
+.vign-consoleTitlebar {
+	BACKGROUND-IMAGE: url(../img/titlebar_gradient_bg_console.gif); BACKGROUND-REPEAT: no-repeat
+}
+.vign-consoleTitlebarStretch {
+	BACKGROUND-IMAGE: url(../img/titlebar_solid_bg_console.gif); BACKGROUND-REPEAT: repeat-x
+}
+.vign-dialogTitlebar {
+	BACKGROUND-IMAGE: url(../img/titlebar_solid_bg.gif)
+}
+.vign-dialogTitlebarStretch {
+	BACKGROUND-IMAGE: url(../img/titlebar_solid_bg.gif)
+}
+.vign-dialogTabDiv {
+	MARGIN-BOTTOM: 5px; WIDTH: 100%; HEIGHT: 24px; BACKGROUND-COLOR: #dddddd
+}
+.vign-tabList {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 5px; MARGIN: 0px 10px; PADDING-TOP: 5px; LIST-STYLE-TYPE: none
+}
+.vign-tabList LI {
+	DISPLAY: inline
+}
+.vign-tabList A {
+	BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 5px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; COLOR: #000000; PADDING-TOP: 0px; TEXT-DECORATION: none
+}
+.vign-tabList A:hover {
+	COLOR: #ff0000; TEXT-DECORATION: underline
+}
+.vign-tabList #lastItem {
+	BORDER-RIGHT: 0px
+}
+.vign-onItem {
+	FONT-WEIGHT: bold
+}
+.vign-consoleBody {
+	FONT: 11px Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #ffffff
+}
+.vign-dialogBody {
+	BACKGROUND-COLOR: #ffffff
+}
+.vign-dialogCanvas {
+	BACKGROUND-COLOR: #ffffff
+}
+.vign-dialogCanvasRule {
+	BACKGROUND-COLOR: #000000
+}
+.vign-dialogCanvasBottomRule {
+	BACKGROUND-IMAGE: url(../img/vign-dialogCanvasBottomRule.gif); BACKGROUND-COLOR: #ffffff
+}
+.vign-bottomMargin {
+	MARGIN-BOTTOM: 0px
+}
+.vign-listviewBorder {
+	WIDTH: 0px
+}
+DIV.vign-dialogHeader {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; PADDING-BOTTOM: 0px; LINE-HEIGHT: 25px; PADDING-TOP: 0px; BORDER-BOTTOM: #89a3ca 1px solid; HEIGHT: 25px; BACKGROUND-COLOR: #99bfe9
+}
+TABLE.vign-dialogHeader {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; BORDER-BOTTOM: #89a3ca 1px solid; HEIGHT: 25px; BACKGROUND-COLOR: #99bfe9
+}
+.vign-dialogTitle {
+	FONT-WEIGHT: bold; FONT-SIZE: x-small; MARGIN: 0px 2em 0px 0px; COLOR: #000000; FONT-FAMILY: Verdana, geneva, arial, helvetica, sans-serif
+}
+H1 {
+	FONT-WEIGHT: bold; FONT-SIZE: x-small; MARGIN: 0px 2em 0px 0px; COLOR: #000000; FONT-FAMILY: Verdana, geneva, arial, helvetica, sans-serif
+}
+.vign-dialogFooter {
+	PADDING-RIGHT: 10px; DISPLAY: block; PADDING-LEFT: 10px; PADDING-BOTTOM: 0px; PADDING-TOP: 15px
+}
+.vign-dialogTitleText {
+	MARGIN-BOTTOM: 7px; FONT: bold 14px Arial, Helvetica, sans-serif; MARGIN-LEFT: 12px; COLOR: #ffffff
+}
+.vign-consoleBody TABLE {
+	FONT: 11px Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #ffffff
+}
+.vign-dialogErrorMsg {
+	BORDER-RIGHT: #000000 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #000000 1px solid; MARGIN-TOP: 20px; PADDING-LEFT: 2px; PADDING-BOTTOM: 0px; MARGIN-LEFT: 20px; OVERFLOW: auto; BORDER-LEFT: #000000 1px solid; WIDTH: 540px; PADDING-TOP: 2px; BORDER-BOTTOM: #000000 1px solid; HEIGHT: 500px; BACKGROUND-COLOR: #ffffff
+}
+.vign-menuTitlebar {
+	BACKGROUND-IMAGE: url(../img/menubar_gradient_bg.gif); BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: #ffffff
+}
+.vign-menuTitlebarStretch {
+	BORDER-RIGHT: #adb3da 2px outset; BORDER-TOP: #adb3da 2px outset; BORDER-LEFT: #adb3da 2px outset; BORDER-BOTTOM: #adb3da 2px outset; BACKGROUND-COLOR: #777fb7
+}
+INPUT#searchText {
+	MARGIN-TOP: 4px
+}
+.vign-menuTitlebarSep {
+	BACKGROUND-IMAGE: url(../img/titlebar_sep.gif); BACKGROUND-REPEAT: no-repeat
+}
+.vign-menubarSpan {
+	MARGIN: -2px 6px 0px
+}
+.vign-buttonRoll {
+	BORDER-RIGHT: #ffffff 2px solid; PADDING-RIGHT: 5px; BORDER-TOP: #ffffff 2px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 0px; BORDER-LEFT: #ffffff 2px solid; LINE-HEIGHT: 14px; PADDING-TOP: 0px; BORDER-BOTTOM: #ffffff 2px solid
+}
+.vign-buttonOver {
+	BORDER-RIGHT: #ebd390 2px solid; PADDING-RIGHT: 5px; BORDER-TOP: #ebd390 2px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 0px; BORDER-LEFT: #ebd390 2px solid; LINE-HEIGHT: 14px; PADDING-TOP: 0px; BORDER-BOTTOM: #ebd390 2px solid
+}
+.vign-formElementLabel {
+	MARGIN-TOP: 4px; DISPLAY: block; FONT: xx-small Verdana, Arial, Helvetica, sans-serif; MARGIN-RIGHT: 4px
+}
+.vign-formElementLabelDisabled {
+	MARGIN-TOP: 4px; DISPLAY: block; FONT: xx-small Verdana, Arial, Helvetica, sans-serif; COLOR: #888888; MARGIN-RIGHT: 4px
+}
+.vign-formElementLabelRequired {
+	MARGIN-TOP: 4px; DISPLAY: block; FONT: bold xx-small Verdana, Arial, Helvetica, sans-serif; MARGIN-RIGHT: 4px
+}
+.vign-formElementLabelRequiredDisabled {
+	MARGIN-TOP: 4px; DISPLAY: block; FONT: bold xx-small Verdana, Arial, Helvetica, sans-serif; COLOR: #888888; MARGIN-RIGHT: 4px
+}
+.vign-formElementSubLabel {
+	DISPLAY: block; MARGIN-BOTTOM: 14px; FONT: xx-small Verdana, Arial, Helvetica, sans-serif; MARGIN-LEFT: 0px
+}
+.vign-formInfo {
+	FONT: 9px Verdana, Arial, Helvetica, sans-serif
+}
+.vign-formElementItemName {
+	FONT: xx-small Verdana, Arial, Helvetica, sans-serif
+}
+.vign-formElementControl {
+	FONT: xx-small Verdana, Arial, Helvetica, sans-serif
+}
+.vign-formLegend {
+	FONT: xx-small Verdana, Arial, Helvetica, sans-serif
+}
+.vign-formLegendRed {
+	FONT: bold 11px Verdana, Arial, Helvetica, sans-serif; COLOR: red
+}
+.vign-formFieldSet {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; MARGIN: 5px; PADDING-TOP: 5px
+}
+.vign-formDialogButton {
+	FONT: xx-small Verdana, Arial, Helvetica, sans-serif
+}
+.vign-formButtonTag {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; PADDING-LEFT: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; PADDING-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-TOP: 0px; BORDER-BOTTOM: 0px
+}
+.vign-formText {
+	FONT: xx-small Verdana, Arial, Helvetica, sans-serif
+}
+.vign-formReadOnly {
+	PADDING-LEFT: 10px; FONT: xx-small Verdana, Arial, Helvetica, sans-serif; COLOR: #888888
+}
+.vign-formReadOnlyBG {
+	FONT: xx-small Verdana, Arial, Helvetica, sans-serif; COLOR: #000000; BACKGROUND-COLOR: #dddddd
+}
+.vign-listViewTable {
+	BORDER-RIGHT: #999999 1px solid; BORDER-TOP: #999999 1px solid; FONT: 11px Verdana, Arial, Helvetica, sans-serif; BORDER-LEFT: #999999 1px solid; BORDER-BOTTOM: #999999 1px solid; BACKGROUND-COLOR: #ffffff
+}
+.vign-gridHeaderBG {
+	WIDTH: 99%
+}
+.vign-gridMainLegend {
+	DISPLAY: block; MARGIN-BOTTOM: 20px; FONT: 10px Verdana, Arial, Helvetica, sans-serif; MARGIN-LEFT: 0px
+}
+.vign-gridHeaderRight {
+	
+}
+.vign-gridHeaderRightTop {
+	
+}
+.vign-gridHeaderRightShim {
+	
+}
+.vign-gridHeaderRightBottom {
+	
+}
+.vign-gridHeaderRightBottomShim {
+	
+}
+.vign-gridFooterLeftShim {
+	
+}
+.vign-gridFooterLeft {
+	
+}
+.vign-gridFooterBG {
+	
+}
+.vign-gridFooterRuleBG {
+	
+}
+.vign-gridFooterLeftRule {
+	
+}
+.vign-gridFooterRightRule {
+	
+}
+.vign-gridHeaderScroller {
+	OVERFLOW: hidden; HEIGHT: 26px
+}
+.vign-gridHeaderTitleRow {
+	BACKGROUND-COLOR: #cddff7
+}
+.vign-gridHeaderTitle {
+	BORDER-RIGHT: #ffffff 2px solid; PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; PADDING-TOP: 3px; BORDER-BOTTOM: #ffffff 2px solid
+}
+.vign-gridHeaderTitle2 {
+	BORDER-RIGHT: #ffffff 2px solid; PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; FONT: bold 11px Verdana, Arial, Helvetica, sans-serif; PADDING-TOP: 3px; BORDER-BOTTOM: #ffffff 2px solid; BACKGROUND-COLOR: #cddff7
+}
+.vign-gridHeaderTitleText {
+	FONT: bold 11px Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.vign-gridHeaderTitleText:hover {
+	FONT: bold 11px Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+.vign-gridHeaderTitleTextUnder {
+	FONT-WEIGHT: bold; COLOR: blue; TEXT-DECORATION: underline
+}
+.vign-gridColumnHead {
+	BORDER-RIGHT: #ffffff 2px solid; PADDING-RIGHT: 3px; BORDER-TOP: #ffffff 0px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 0px; FONT: bold 11px Verdana, Arial, Helvetica, sans-serif; VERTICAL-ALIGN: top; BORDER-LEFT: #ffffff 0px solid; PADDING-TOP: 6px; BORDER-BOTTOM: #ffffff 2px solid; TEXT-DECORATION: none
+}
+.vign-gridCheck {
+	BORDER-RIGHT: #ffffff 2px solid; PADDING-RIGHT: 3px; BORDER-TOP: #ffffff 0px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; BORDER-LEFT: #ffffff 2px solid; PADDING-TOP: 3px; BORDER-BOTTOM: #ffffff 2px solid; BACKGROUND-COLOR: #9cbae7
+}
+.vign-gridHeaderCheck {
+	BORDER-RIGHT: white 2px solid; PADDING-RIGHT: 3px; BORDER-TOP: white 0px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; BORDER-LEFT: white 0px solid; PADDING-TOP: 3px; BORDER-BOTTOM: white 0px solid; POSITION: relative; HEIGHT: 26px; BACKGROUND-COLOR: #b6bee4
+}
+.vign-gridText {
+	FONT: 11px Verdana, Arial, Helvetica, sans-serif
+}
+.vign-gridBG {
+	BACKGROUND-COLOR: #ffffff
+}
+.vign-gridBG-div {
+	BACKGROUND-COLOR: #ffffff
+}
+.vign-gridMain0Details {
+	BORDER-RIGHT: #ffffff 2px solid; PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; FONT: 11px Verdana, Arial, Helvetica, sans-serif; PADDING-TOP: 3px; BORDER-BOTTOM: #ffffff 2px solid; BACKGROUND-COLOR: #eeeeee
+}
+.vign-gridMain1Details {
+	BORDER-RIGHT: #ffffff 2px solid; PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; FONT: 11px Verdana, Arial, Helvetica, sans-serif; PADDING-TOP: 3px; BORDER-BOTTOM: #ffffff 2px solid; BACKGROUND-COLOR: #eeeeee
+}
+.vign-gridBody0Details {
+	BORDER-RIGHT: #cddff7 0px solid; PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; FONT: 11px Verdana, Arial, Helvetica, sans-serif; PADDING-TOP: 3px; BORDER-BOTTOM: #cddff7 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.vign-gridBody1Details {
+	BORDER-RIGHT: #ffffff 2px solid; PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; FONT: 11px Verdana, Arial, Helvetica, sans-serif; PADDING-TOP: 3px; BORDER-BOTTOM: #cddff7 0px solid; BACKGROUND-COLOR: #eeeeee
+}
+.vign-gridBody2Details {
+	BORDER-RIGHT: white 2px solid; PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; FONT: 11px Verdana, Arial, Helvetica, sans-serif; PADDING-TOP: 3px; BORDER-BOTTOM: #cddff7 2px solid; BACKGROUND-COLOR: #ffffff
+}
+.vign-gridBody3Details {
+	BORDER-RIGHT: white 2px solid; PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; FONT: 11px Verdana, Arial, Helvetica, sans-serif; PADDING-TOP: 3px; BORDER-BOTTOM: #cddff7 2px solid; BACKGROUND-COLOR: #ffffff
+}
+.vign-gridPageTools {
+	PADDING-RIGHT: 2px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 1px; PADDING-TOP: 3px; BACKGROUND-COLOR: #ffffff; TEXT-ALIGN: right
+}
+INPUT#pagenumber {
+	FONT: 9px Verdana, Arial, Helvetica, sans-serif
+}
+.vign-gridPageToolsOn {
+	FONT: 9px Verdana, Arial, Helvetica, sans-serif; COLOR: #000000
+}
+.vign-gridPageToolsOff {
+	FONT: 9px Verdana, Arial, Helvetica, sans-serif; COLOR: #cccccc
+}
+.vign-gridPaginatorBottom {
+	MARGIN-TOP: 2px; DISPLAY: inline; FONT-SIZE: 11px; FONT-FAMILY: Verdana; BACKGROUND-COLOR: white
+}
+.vign-listBorderNoTool {
+	BORDER-RIGHT: #000000 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #000000 1px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 0px; OVERFLOW: auto; BORDER-LEFT: #000000 1px solid; WIDTH: 100%; PADDING-TOP: 2px; BORDER-BOTTOM: #000000 1px solid; BACKGROUND-COLOR: #ffffff
+}
+.vign-listBorderToolTop {
+	BORDER-RIGHT: #000000 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #000000 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; FONT: 11px Verdana, Arial, Helvetica, sans-serif; OVERFLOW: hidden; BORDER-LEFT: #000000 1px solid; WIDTH: 100%; PADDING-TOP: 3px; BORDER-BOTTOM: 0px; BACKGROUND-COLOR: #b6bee4
+}
+.vign-listTitle {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 12px; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+.vign-tableReadOnly {
+	FONT: 11px Verdana, Arial, Helvetica, sans-serif; COLOR: #888888
+}
+.vign-gridLastRow {
+	outline-width: 3px; outline-color: White
+}
+.vign-lastRow {
+	BORDER-RIGHT: #ffffff 2px solid; PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; FONT: 11px Verdana, Arial, Helvetica, sans-serif; PADDING-TOP: 3px; BORDER-BOTTOM: #ffffff 2px solid; BACKGROUND-COLOR: #ffffff
+}
+.vign-ok {
+	COLOR: #009900! important
+}
+.vign-gridHeaderTools {
+	BORDER-RIGHT: #ffffff 2px solid; PADDING-RIGHT: 3px; BORDER-TOP: #ffffff 2px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; FONT: 11px Verdana, Arial, Helvetica, sans-serif; BORDER-LEFT: #ffffff 2px solid; PADDING-TOP: 3px; BORDER-BOTTOM: #ffffff 2px solid; BACKGROUND-COLOR: #9cbae7
+}
+.vign-toolbarSpanOff {
+	BORDER-RIGHT: #9ebae4 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #9ebae4 1px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; BORDER-LEFT: #9ebae4 1px solid; CURSOR: pointer; COLOR: #666666; PADDING-TOP: 2px; BORDER-BOTTOM: #9ebae4 1px solid
+}
+.vign-toolbarSpan {
+	BORDER-RIGHT: #9ebae4 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #9ebae4 1px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; BORDER-LEFT: #9ebae4 1px solid; CURSOR: pointer; PADDING-TOP: 2px; BORDER-BOTTOM: #9ebae4 1px solid
+}
+.vign-toolbarSpan2 {
+	BORDER-RIGHT: #9ebae4 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #9ebae4 1px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; BORDER-LEFT: #9ebae4 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #9ebae4 1px solid
+}
+.vign-toolbarSpanOver {
+	BORDER-RIGHT: #9ebae4 1px outset; PADDING-RIGHT: 2px; BORDER-TOP: #9ebae4 1px outset; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; BORDER-LEFT: #9ebae4 1px outset; CURSOR: pointer; PADDING-TOP: 2px; BORDER-BOTTOM: #9ebae4 1px outset
+}
+.vign-toolbarRoll {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Verdana; BACKGROUND-COLOR: #ffffff; TEXT-DECORATION: none
+}
+.vign-toolbarOff {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Verdana; BACKGROUND-COLOR: #9ebae4; TEXT-DECORATION: none
+}
+.vign-toolbarDisabled {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; CURSOR: pointer; COLOR: #666666; FONT-STYLE: italic; FONT-FAMILY: Verdana; BACKGROUND-COLOR: #9ebae4; TEXT-DECORATION: none
+}
+.vign-dialogTabLabel {
+	FONT: 10px Verdana, Arial, Helvetica, sans-serif; COLOR: #333333; TEXT-DECORATION: none
+}
+.vign-dialogTabLabelOn {
+	MARGIN-BOTTOM: 2px; FONT: bold 10px Verdana, Arial, Helvetica, sans-serif; COLOR: #000000; TEXT-DECORATION: none
+}
+.vign-dialogTabLeftSmall {
+	BACKGROUND-IMAGE: url(../img/tabs/l-s.gif)
+}
+.vign-dialogTabLeftBig {
+	BACKGROUND-IMAGE: url(../img/tabs/l-b.gif)
+}
+.vign-dialogTabBigSmall {
+	BACKGROUND-IMAGE: url(../img/tabs/b-s.gif)
+}
+.vign-dialogTabSmallBig {
+	BACKGROUND-IMAGE: url(../img/tabs/s-b.gif)
+}
+.vign-dialogTabSmallSmall {
+	BACKGROUND-IMAGE: url(../img/tabs/s-s.gif)
+}
+.vign-dialogTabSmallRight {
+	BACKGROUND-IMAGE: url(../img/tabs/s-r.gif)
+}
+.vign-dialogTabBigRight {
+	BACKGROUND-IMAGE: url(../img/tabs/b-r.gif)
+}
+.vign-dialogTabBigBG {
+	BACKGROUND-IMAGE: url(../img/tabs/b-bg.gif); BACKGROUND-REPEAT: repeat-x
+}
+.vign-dialogTabSmallBG {
+	BACKGROUND-IMAGE: url(../img/tabs/s-bg.gif)
+}
+.vign-dialogTabEmptyBG {
+	BACKGROUND-IMAGE: url(../img/tabs/x-bg.gif)
+}
+.vign-menu {
+	BORDER-RIGHT: #9cbae7 1px outset; BORDER-TOP: #9cbae7 1px outset; BORDER-LEFT: #9cbae7 1px outset; COLOR: #000000; BORDER-BOTTOM: #9cbae7 1px outset; TEXT-DECORATION: none
+}
+.vign-menuRoll {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Verdana; BACKGROUND-COLOR: #ffffff; TEXT-DECORATION: none
+}
+.vign-menuOff {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Verdana; BACKGROUND-COLOR: #fcc874; TEXT-DECORATION: none
+}
+.vign-pathText {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-WEIGHT: normal; FONT-SIZE: 11px; FONT-FAMILY: Verdana
+}
+.vign-pathBox {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; FONT-FAMILY: Verdana; BACKGROUND-COLOR: #f9f2d2
+}
+.vign-pathRoll {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Verdana; BACKGROUND-COLOR: #fcc874; TEXT-DECORATION: none
+}
+.vign-pathOff {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Verdana; BACKGROUND-COLOR: #f9f2d2; TEXT-DECORATION: none
+}
+.vign-menuLinkMain {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+.vign-menuLinkMain1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #ffffff; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+.vign-menuLinkMain1Roll {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #fac35c; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+.vign-logPad {
+	PADDING-LEFT: 8px
+}
+.vign-gridLog {
+	BORDER-RIGHT: #cddff7 2px solid; PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; COLOR: blue; PADDING-TOP: 3px; BORDER-BOTTOM: #cddff7 2px solid; BACKGROUND-COLOR: #ffffff
+}
+.vign-logLevel1 {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 3px; PADDING-TOP: 20px
+}
+.vign-logLevel2 {
+	PADDING-RIGHT: 25px; PADDING-LEFT: 25px; PADDING-BOTTOM: 3px; PADDING-TOP: 3px
+}
+.vign-logLevel3 {
+	PADDING-RIGHT: 40px; PADDING-LEFT: 40px; PADDING-BOTTOM: 3px; PADDING-TOP: 3px
+}
+.vign-logPopup {
+	BORDER-RIGHT: #d3d3d3 3px outset; PADDING-RIGHT: 3px; BORDER-TOP: #d3d3d3 3px outset; DISPLAY: none; PADDING-LEFT: 3px; FONT-SIZE: 10px; Z-INDEX: 1000; PADDING-BOTTOM: 3px; BORDER-LEFT: #d3d3d3 3px outset; WIDTH: 200px; PADDING-TOP: 3px; BORDER-BOTTOM: #d3d3d3 3px outset; POSITION: absolute; BACKGROUND-COLOR: #fffacd
+}
+.vign-displayInline {
+	DISPLAY: inline
+}
+.vign-loginBkgrd {
+	BACKGROUND-IMAGE: url(../img/console_login_Blue.jpg)
+}
+.vign-loginLabel {
+	FONT: 11px Verdana, Arial, Helvetica, sans-serif
+}
+.vign-loginControl {
+	FONT: 11px Verdana, Arial, Helvetica, sans-serif; MARGIN-LEFT: 3px
+}
+.vign-loginBody {
+	BACKGROUND-COLOR: #ffffff
+}
+.vign-loginBox {
+	BORDER-RIGHT: #cddff7 2px solid; BORDER-TOP: #cddff7 2px solid; BORDER-LEFT: #cddff7 2px solid; BORDER-BOTTOM: #cddff7 2px solid
+}
+.vign-loginMessageText {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 14px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; FONT-FAMILY: Verdana; BACKGROUND-COLOR: #cddff7
+}
+.vign-loginMessageSubText {
+	FONT-SIZE: 12px; FONT-FAMILY: Verdana
+}
+.vign-loginBody {
+	MARGIN-TOP: 100px; TEXT-ALIGN: center
+}
+.vign-login {
+	BACKGROUND-IMAGE: url(../img/vign-login-background.jpg); MARGIN: 0px auto; WIDTH: 462px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 278px; BACKGROUND-COLOR: #5082cd; TEXT-ALIGN: left
+}
+.vign-loginContent {
+	BACKGROUND-POSITION: 50% bottom; BACKGROUND-IMAGE: url(../img/login_bottom.gif); BACKGROUND-REPEAT: no-repeat
+}
+.vign-loginLabel {
+	PADDING-RIGHT: 0.5em; FONT-WEIGHT: bold
+}
+.vign-login-productTitle {
+	MARGIN: 50px 0px 10px 35px
+}
+#vign-login-contentTable {
+	MARGIN-LEFT: 90px
+}
+#vign-login-button {
+	BORDER-RIGHT: #8c601b 1px solid; PADDING-RIGHT: 0.8em; BORDER-TOP: #fece83 1px solid; PADDING-LEFT: 0.8em; FONT-WEIGHT: bold; PADDING-BOTTOM: 0.2em; BORDER-LEFT: #fece83 1px solid; COLOR: #333; PADDING-TOP: 0.2em; BORDER-BOTTOM: #8c601b 1px solid; BACKGROUND-COLOR: #feae31
+}
+.vign-login-productVersion {
+	PADDING-RIGHT: 15px; MARGIN-TOP: 30px; PADDING-LEFT: 0px; PADDING-BOTTOM: 12px; COLOR: #c0ccdd; PADDING-TOP: 10px; TEXT-ALIGN: right
+}
+.vign-login-copyrightBlock {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; MARGIN: 0px auto; WIDTH: 460px; COLOR: #aaa; PADDING-TOP: 10px; TEXT-ALIGN: left
+}
+.vign-aboutTextarea {
+	BORDER-RIGHT: #ccc 1px solid; BORDER-TOP: #ccc 1px solid; FONT-SIZE: xx-small; BORDER-LEFT: #ccc 1px solid; WIDTH: 300px; BORDER-BOTTOM: #ccc 1px solid; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #eee
+}
+.vign-aboutBody {
+	MARGIN: 0px; TEXT-ALIGN: center
+}
+.vign-about {
+	BORDER-RIGHT: #000 1px solid; BORDER-TOP: #000 1px solid; BACKGROUND-IMAGE: url(../img/login_bg.gif); MARGIN: 0px auto; BORDER-LEFT: #000 1px solid; WIDTH: 460px; BORDER-BOTTOM: #000 1px solid; BACKGROUND-REPEAT: no-repeat; HEIGHT: 458px; BACKGROUND-COLOR: #5082cd; TEXT-ALIGN: left
+}
+.vign-aboutContent {
+	BACKGROUND-POSITION: 50% bottom; BACKGROUND-IMAGE: url(../img/login_bottom.gif); BACKGROUND-REPEAT: no-repeat; HEIGHT: 458px
+}
+.vign-about-productTitle {
+	MARGIN: 45px 0px 10px 35px
+}
+.vign-about-contentTable {
+	MARGIN-LEFT: 90px; WIDTH: 300px
+}
+#vign-about-button {
+	BORDER-RIGHT: #8c601b 1px solid; PADDING-RIGHT: 0.8em; BORDER-TOP: #fece83 1px solid; PADDING-LEFT: 0.8em; FONT-WEIGHT: bold; PADDING-BOTTOM: 0.2em; BORDER-LEFT: #fece83 1px solid; COLOR: #333; PADDING-TOP: 0.2em; BORDER-BOTTOM: #8c601b 1px solid; BACKGROUND-COLOR: #feae31
+}
+.vign-about-productVersion {
+	PADDING-RIGHT: 15px; MARGIN-TOP: 30px; PADDING-LEFT: 0px; PADDING-BOTTOM: 12px; COLOR: #c0ccdd; PADDING-TOP: 10px; TEXT-ALIGN: right
+}
+.vign-calendarTitleText {
+	FONT: bold 12px Arial, Helvetica, sans-serif
+}
+.vign-calendarDate {
+	FONT-SIZE: 11px; COLOR: blue; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.vign-calendarDateSelected {
+	FONT: bold 11px Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #daddf3; TEXT-DECORATION: none
+}
+.vign-calendarColumnHead {
+	FONT: bold 11px Verdana, Arial, Helvetica, sans-serif
+}
+.vign-calendarDateToday {
+	FONT: bold 11px Verdana, Arial, Helvetica, sans-serif; COLOR: #000000; TEXT-DECORATION: none
+}
+.vign-taskAccepted {
+	FONT: bold italic 14px Verdana, Arial, Helvetica, sans-serif; COLOR: #33aa33
+}
+.vign-taskUnaccepted {
+	FONT: bold italic 14px Verdana, Arial, Helvetica, sans-serif; COLOR: #ff0000
+}
+.actionBorder {
+	BORDER-RIGHT: #a5a5a5 1px solid; BORDER-TOP: #a5a5a5 1px solid; BORDER-LEFT: #a5a5a5 1px solid; BORDER-BOTTOM: #a5a5a5 1px solid
+}
+.actionBorderHead {
+	PADDING-RIGHT: 5px; BACKGROUND-POSITION: right 50%; PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND-IMAGE: url(../img/actions_banner.gif); MARGIN-BOTTOM: 5px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; BORDER-BOTTOM: #a5a5a5 1px solid; BACKGROUND-REPEAT: no-repeat; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #cddff7
+}
+.roleTitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; BORDER-BOTTOM: #cddff7 1px solid; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #eeeeee
+}
+.roleAction {
+	FONT-SIZE: 11px; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+.actionBkgrd {
+	BACKGROUND-COLOR: #ffffff
+}
+.vign-gridMainWarn {
+	FONT: bold 11px Verdana, Arial, Helvetica, sans-serif; COLOR: #ff0000
+}
+.vign-portletLogo {
+	BACKGROUND-IMAGE: url(../img/vign_v7_module_logo.gif); BACKGROUND-REPEAT: no-repeat
+}
+.vign-headingTitle {
+	PADDING-LEFT: 4px; PADDING-BOTTOM: 2px; FONT: bold 11px Verdana, Arial, Helvetica, sans-serif; PADDING-TOP: 2px; BACKGROUND-COLOR: #9ebae4
+}
+.vign-addNote {
+	FONT: 11px Arial, Helvetica, sans-serif; COLOR: #000000; MARGIN-RIGHT: 5px; TEXT-DECORATION: none
+}
+.vign-addNote:hover {
+	TEXT-DECORATION: underline
+}
+.vign-notesOdd {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; FONT: 11px Verdana, Arial, Helvetica, sans-serif; PADDING-TOP: 3px; BACKGROUND-COLOR: #f9f9f9
+}
+.vign-notesEven {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; FONT: 11px Verdana, Arial, Helvetica, sans-serif; PADDING-TOP: 3px; BACKGROUND-COLOR: #eeeeee
+}
+.vign-previewRegion {
+	BORDER-RIGHT: #daddf3 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #daddf3 1px solid; MARGIN-TOP: 10px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; BORDER-LEFT: #daddf3 1px solid; WIDTH: 100%; PADDING-TOP: 3px; BORDER-BOTTOM: #daddf3 1px solid
+}
+.vign-taskIndex {
+	DISPLAY: inline; FONT: 11px Verdana, Arial, Helvetica, sans-serif; MARGIN-LEFT: 2px
+}
+.vign-taskIndex:hover {
+	TEXT-DECORATION: underline
+}
+.vign-taskBorder {
+	BORDER-TOP-WIDTH: 1px; PADDING-RIGHT: 3px; MARGIN-TOP: 10px; PADDING-LEFT: 3px; BORDER-LEFT-WIDTH: 1px; BORDER-LEFT-COLOR: #ffffff; MARGIN-BOTTOM: 10px; PADDING-BOTTOM: 3px; WIDTH: 100%; BORDER-TOP-COLOR: #ffffff; PADDING-TOP: 3px; BORDER-BOTTOM: #ffffff 1px solid; BORDER-RIGHT-WIDTH: 1px; BORDER-RIGHT-COLOR: #ffffff
+}
+.vign-taskDescriptionLabel {
+	DISPLAY: block; FONT: bold 11px Verdana, Arial, Helvetica, sans-serif
+}
+.vign-taskDescription {
+	DISPLAY: block; PADDING-LEFT: 10px; FONT: 11px Verdana, Arial, Helvetica, sans-serif
+}
+.vign-taskDetailsHeader {
+	MARGIN-TOP: 4px; DISPLAY: block; FONT: bold 11px Verdana, Arial, Helvetica, sans-serif; MARGIN-RIGHT: 4px
+}
+.vign-taskDetailsLabel {
+	DISPLAY: inline; PADDING-LEFT: 7px; FONT: 11px Verdana, Arial, Helvetica, sans-serif
+}
+.vign-taskDetailsText {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 4px; FONT: 11px Verdana, Arial, Helvetica, sans-serif
+}
+.vign-previewControlLabel {
+	FONT: 10px Arial, Helvetica, sans-serif; MARGIN-LEFT: 0px; COLOR: #000000; TEXT-DECORATION: none
+}
+.vign-previewControlLabel:hover {
+	TEXT-DECORATION: underline
+}
+.vign-taskSectionLabel {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; FONT: bold 11px Verdana, Arial, Helvetica, sans-serif; MARGIN-LEFT: 6px; WIDTH: 100%; PADDING-TOP: 3px; BACKGROUND-COLOR: #cddff7
+}
+.vign-sectionMargin {
+	MARGIN-TOP: 8px
+}
+.vign-inputHeaderTitle {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; FONT: bold 11px Verdana, Arial, Helvetica, sans-serif; PADDING-TOP: 3px; BORDER-BOTTOM: #ffffff 2px solid; BACKGROUND-COLOR: #cddff7
+}
+.vign-inputRows {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; PADDING-TOP: 3px; BORDER-BOTTOM: #ffffff 2px solid; BACKGROUND-COLOR: #f6f6f6
+}
+.vign-inputRowsLeft {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; BORDER-LEFT: #ffffff 2px solid; PADDING-TOP: 3px; BORDER-BOTTOM: #ffffff 2px solid; BACKGROUND-COLOR: #f6f6f6
+}
+.vign-payloadInlineControl {
+	DISPLAY: inline; FONT: 9px Arial, Helvetica, sans-serif; COLOR: #000000; TEXT-DECORATION: none
+}
+.vign-payloadInlineControl:hover {
+	TEXT-DECORATION: underline
+}
+.vign-payloadRows {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px; BACKGROUND-COLOR: #f9f9f9
+}
+.vign-taskContentFormatTable {
+	MARGIN: 10px
+}
+.vign-taskBody {
+	BACKGROUND-COLOR: #ffffff
+}
+.vign-taskTitlebar {
+	BACKGROUND-IMAGE: url(../img/titlebar_gradient_bg.gif)
+}
+.vign-taskTitlebarStretch {
+	BACKGROUND-IMAGE: url(../img/titlebar_solid_bg.gif)
+}
+.vign-taskTitleText {
+	FONT: bold 14px Arial, Helvetica, sans-serif; MARGIN-LEFT: 20px; COLOR: #ffffff
+}
+.vign-taskDialogCanvas {
+	BACKGROUND-COLOR: #ffffff
+}
+.vign-taskDialogCanvasRule {
+	BACKGROUND-COLOR: #000000
+}
+.vign-taskButtonGroup {
+	MARGIN-TOP: 6px
+}
+.vign-taskDialogButton {
+	FONT: 11px Verdana, Arial, Helvetica, sans-serif
+}
+.vign-taskItemLabel {
+	DISPLAY: inline; FONT: bold 10px Verdana, Arial, Helvetica, sans-serif; VERTICAL-ALIGN: middle
+}
+.vign-noteDate {
+	FONT: 10px Arial, Helvetica, sans-serif; COLOR: #696969; MARGIN-RIGHT: 4px
+}
+.vign-noteAuthor {
+	FONT: 10px Arial, Helvetica, sans-serif; MARGIN-LEFT: 15px; COLOR: #696969
+}
+.vign-noteDetail {
+	MARGIN-TOP: 4px; FONT: 11px Verdana, Arial, Helvetica, sans-serif; MARGIN-LEFT: 0px
+}
+.vign-textWarn {
+	COLOR: red
+}
+.vign-tabOn {
+	FONT-WEIGHT: bold; COLOR: #000000
+}
+.vign-tab {
+	FONT-WEIGHT: normal; COLOR: #000000
+}
+.vign-gridBody4Details {
+	BORDER-RIGHT: #cddff7 2px solid; PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; FONT: 11px Verdana, Arial, Helvetica, sans-serif; BORDER-LEFT: #cddff7 2px solid; PADDING-TOP: 3px; BORDER-BOTTOM: #cddff7 2px solid; BACKGROUND-COLOR: #ffffff
+}
+.iceMenu {
+	FONT-SIZE: 24px; FONT-FAMILY: Arial
+}
+BODY {
+	FONT-WEIGHT: normal; FONT-SIZE: xx-small; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: verdana, geneva, arial, helvetica, sans-serif
+}
+PRE {
+	FONT-WEIGHT: normal; FONT-SIZE: xx-small; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: verdana, geneva, arial, helvetica, sans-serif
+}
+TR {
+	FONT-WEIGHT: normal; FONT-SIZE: xx-small; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: verdana, geneva, arial, helvetica, sans-serif
+}
+TD {
+	FONT-WEIGHT: normal; FONT-SIZE: x-small; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: verdana, geneva, arial, helvetica, sans-serif
+}
+TH {
+	FONT-WEIGHT: normal; FONT-SIZE: xx-small; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: verdana, geneva, arial, helvetica, sans-serif
+}
+P {
+	FONT-WEIGHT: normal; FONT-SIZE: xx-small; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: verdana, geneva, arial, helvetica, sans-serif
+}
+LEGEND {
+	FONT-SIZE: xx-small; MARGIN-BOTTOM: 10px
+}
+P {
+	MARGIN-TOP: 0px; MARGIN-BOTTOM: 1.3em
+}
+TH {
+	FONT-WEIGHT: bold
+}
+.vign-fontSm {
+	FONT-SIZE: xx-small
+}
+.vign-font {
+	FONT-SIZE: xx-small
+}
+.wsui-font {
+	FONT-SIZE: xx-small
+}
+.vign-fontLg {
+	FONT-SIZE: x-small
+}
+.wsui-font-large {
+	FONT-SIZE: x-small
+}
+HR {
+	COLOR: #cccccc; HEIGHT: 1px
+}
+TABLE.vign-formTable TD {
+	PADDING-BOTTOM: 0.25em; PADDING-TOP: 0.25em
+}
+TABLE.vign-formTable TD TABLE TD {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+TABLE.vign-formTable TD.vign-spacerCell {
+	FONT-SIZE: 0px; HEIGHT: 0.9em
+}
+H1 {
+	FONT-WEIGHT: bold; FONT-SIZE: small; MARGIN-BOTTOM: 0px; COLOR: #000000; FONT-FAMILY: arial, helvetica, sans-serif
+}
+.epi-pageTitle {
+	FONT-WEIGHT: bold; FONT-SIZE: small; MARGIN-BOTTOM: 0px; COLOR: #000000; FONT-FAMILY: arial, helvetica, sans-serif
+}
+.wsui-page-title {
+	FONT-WEIGHT: bold; FONT-SIZE: small; MARGIN-BOTTOM: 0px; COLOR: #000000; FONT-FAMILY: arial, helvetica, sans-serif
+}
+.portlet-section-header {
+	FONT-WEIGHT: bold; FONT-SIZE: small; MARGIN-BOTTOM: 0px; COLOR: #000000; FONT-FAMILY: arial, helvetica, sans-serif
+}
+A {
+	COLOR: #014a67; TEXT-DECORATION: none
+}
+A:link {
+	COLOR: #014a67; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #014a67
+}
+A:active {
+	COLOR: #003366; TEXT-DECORATION: underline
+}
+A:hover {
+	COLOR: #003366; TEXT-DECORATION: underline
+}
+A.vign-headline {
+	FONT-WEIGHT: normal; FONT-SIZE: xx-small; TEXT-DECORATION: underline! important
+}
+.vign-dim {
+	FONT: xx-small Verdana, Arial, Helvetica, sans-serif; COLOR: #666666! important
+}
+.vign-infoText {
+	FONT-SIZE: xx-small; COLOR: #000000
+}
+.vign-listHeader {
+	BACKGROUND-COLOR: #99bfe9
+}
+.vign-listDefaultRow {
+	BACKGROUND-COLOR: #d2d2d2
+}
+.vign-listSubRow {
+	BACKGROUND-COLOR: #ebebeb
+}
+.vign-listRows {
+	BACKGROUND-COLOR: #fafafa
+}
+.vign-formHeading {
+	FONT: bold xx-small Verdana, Helvetica, sans-serif
+}
+.vign-listText {
+	FONT: xx-small Verdana, Arial, Helvetica, sans-serif
+}
+.vign-listTextBold {
+	FONT: bold xx-small Verdana, Arial, Helvetica, sans-serif
+}
+.vign-listTextWarn {
+	FONT: italic xx-small Verdana, Arial, Helvetica, sans-serif; COLOR: #ff0000
+}
+.vign-listTextBoldRed {
+	FONT: bold xx-small Verdana, Arial, Helvetica, sans-serif; COLOR: #ff0000
+}
+.vign-InfoDiv {
+	BORDER-RIGHT: #666666 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #666666 1px solid; MARGIN-TOP: 1em; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; BORDER-LEFT: #666666 1px solid; PADDING-TOP: 4px; BORDER-BOTTOM: #666666 1px solid; BACKGROUND-COLOR: #efefef
+}
+.vign-InfoBug {
+	MARGIN-LEFT: 4px
+}
+.vign-top3 {
+	MARGIN-TOP: 3px
+}
+.vign-top5 {
+	MARGIN-TOP: 5px
+}
+.vign-basicLabel {
+	FONT: xx-small Verdana, Arial, Helvetica, sans-serif
+}
+.vign-basicLabelBold {
+	FONT: bold xx-small Verdana, Arial, Helvetica, sans-serif
+}
+.vign-ruleSummary {
+	BORDER-RIGHT: #666666 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #666666 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; FONT: xx-small Verdana, Arial, Helvetica, sans-serif; BORDER-LEFT: #666666 1px solid; WIDTH: 100%; COLOR: #333333; PADDING-TOP: 5px; BORDER-BOTTOM: #666666 1px solid; BACKGROUND-COLOR: #efefef
+}
+.vign-defaultBkgrd {
+	BACKGROUND-COLOR: #efefef
+}
+.vign-vertAlign {
+	VERTICAL-ALIGN: middle
+}
+.vign-siteNavOptional {
+	MARGIN-TOP: 3px; MARGIN-BOTTOM: 10px; MARGIN-LEFT: 22px; VERTICAL-ALIGN: middle
+}
+.vign-uespec {
+	BORDER-RIGHT: orange 1px dotted; PADDING-RIGHT: 3px; BORDER-TOP: orange 1px dotted; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; FONT: xx-small Verdana, Arial, Helvetica, sans-serif; BORDER-LEFT: orange 1px dotted; WIDTH: 100%; COLOR: #333333; PADDING-TOP: 3px; BORDER-BOTTOM: orange 1px dotted; BACKGROUND-COLOR: #eeeeee
+}
+.vign-vertAlign {
+	VERTICAL-ALIGN: middle
+}
+.vign-siteNavOptional {
+	MARGIN-TOP: 3px; MARGIN-BOTTOM: 10px; MARGIN-LEFT: 22px; VERTICAL-ALIGN: middle
+}
+.vign-uespec {
+	BORDER-RIGHT: orange 1px dotted; PADDING-RIGHT: 3px; BORDER-TOP: orange 1px dotted; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; FONT: xx-small Verdana, Arial, Helvetica, sans-serif; BORDER-LEFT: orange 1px dotted; WIDTH: 100%; COLOR: #333333; PADDING-TOP: 3px; BORDER-BOTTOM: orange 1px dotted; BACKGROUND-COLOR: #eeeeee
+}
+.vign-pubDiv {
+	BORDER-RIGHT: darkgray 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: darkgray 1px solid; DISPLAY: none; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; BORDER-LEFT: darkgray 1px solid; WIDTH: 200px; PADDING-TOP: 5px; BORDER-BOTTOM: darkgray 1px solid; POSITION: absolute; BACKGROUND-COLOR: #cddff7
+}
+.vign-pubDiv UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+.vign-pubDiv LI {
+	BACKGROUND-POSITION: 0px 0.5em; PADDING-LEFT: 10px; BACKGROUND-IMAGE: url(../img/pub_arrow.gif); MARGIN-LEFT: 0px; BACKGROUND-REPEAT: no-repeat
+}
+.vign-pubDiv .vign-warn {
+	BACKGROUND-POSITION: 0px 0.5em; PADDING-LEFT: 10px; BACKGROUND-IMAGE: url(../img/pub_warn.gif); MARGIN-LEFT: 0px; BACKGROUND-REPEAT: no-repeat
+}
+.vign-pubDiv .vign-code {
+	DISPLAY: none; FONT-SIZE: xx-small; COLOR: #666666; TEXT-ALIGN: right
+}
+.vign-jobReportTable {
+	BORDER-RIGHT: #999999 1px solid; BORDER-TOP: #999999 1px solid; MARGIN: 15px; FONT: 11px Verdana, Arial, Helvetica, sans-serif; BORDER-LEFT: #999999 1px solid; WIDTH: 95%; BORDER-BOTTOM: #999999 1px solid; BACKGROUND-COLOR: #ffffff
+}
+.vign-jobReportTable TH {
+	WHITE-SPACE: nowrap; TEXT-ALIGN: left
+}
+.vign-jobReportTable TR {
+	BACKGROUND-COLOR: #9cbae7
+}
+.vign-jobReportTable TD {
+	BORDER-LEFT: #dddddd 1px solid
+}
+.vign-jobReportHeader {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+/* estilos dos paises e produtos */
+ .odd{background-color:#ffffff;} 
+ .even{background-color: #eeeeee;} 
+

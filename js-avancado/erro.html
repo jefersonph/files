@@ -1,0 +1,36 @@
+<html>
+  <head></head>
+  <body>
+    <div id="error" style="display:none;color:red">
+      Ocorreu um erro ao contatar o servidor.
+      <a href="javascript:busca()">Tentar novamente</a>
+      Recarregando automaticamente em <span id="time">10</span> segundos.
+    </div>
+    <div id="news"></div>
+    <script src="jquery.js"></script>
+    <script>
+      time = 10
+      dec_counter = function(){
+        time--
+	$('#time').html(time)
+        if(time > 0)
+          setTimeout(dec_counter,1000)
+        else{
+	  time = 10
+	  busca()
+        }
+      }
+      $('#error').ajaxError(function(){
+        $(this).slideDown()
+        time = 10
+        setTimeout(dec_counter,1000)
+      })
+      paginas = ['noticiasdf.html', 'fkj', 'kfj', 'noticia.html']
+      busca = function(){
+        $('#error').slideUp()
+        $('#news').load(paginas.shift())
+      }
+      busca()
+    </script>
+  </body>
+</html>

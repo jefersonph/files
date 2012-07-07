@@ -1,0 +1,7 @@
+[
+  {"nome":"Joaquim", "idade":23, "notas":[8,9,7,8]},
+  {"nome":"Maria", "idade":41, "notas":[10,10,9,9]},
+  {"nome":"José", "idade":32, "notas":[1,2,3,1]},
+  {"nome":"João", "idade":30, "notas":[6,5,6,3]},
+  {"nome":"Manuela", "idade":22, "notas":[4,6,8,8]}
+]

@@ -1,0 +1,26 @@
+<html>
+<head>
+<script src="http://pizzolato.com.br/jquery/js/jquery-1.4.2.min.js"></script>
+</head>
+<body>
+    <table>
+     <tr>
+       <td class="red">___</td>
+       <td class="yellow">___</td>
+       <td class="teal">___</td>
+       <td class="lime">___</td>
+     </tr>
+     <tr>
+       <td class="navy">___</td>
+       <td class="gray">___</td>
+       <td class="green">___</td>
+       <td class="blue">___</td>
+     </tr>
+    </table>
+<script>
+$('td').mouseover(function(){$(this).css("background" , $(this).attr('class'))});
+$('td').mouseout(function(){$(this).css("background" , "white")});
+</script>
+
+	</body>
+</html>

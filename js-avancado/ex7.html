@@ -1,0 +1,31 @@
+<html>
+  <head><head>
+  <body>
+    <ul id="menu">
+      <li style="opacity:.4;font-size:10px">Foo</li>
+      <li style="opacity:.4;font-size:10px">Bar</li>
+      <li style="opacity:.4;font-size:10px">Baz</li>
+      <li style="opacity:.4;font-size:10px">Lorem</li>
+      <li style="opacity:.4;font-size:10px">Ipsum</li>
+      <li style="opacity:.4;font-size:10px">Dolor</li>
+      <li style="opacity:.4;font-size:10px">Sit</li>
+      <li style="opacity:.4;font-size:10px">Amet</li>
+    <ul>
+    <script src="jquery.js"></script>
+    <script>
+      $('#menu li')
+        .mouseover(function(){
+          $(this).stop().animate({'opacity':1, 'font-size':'20px'},
+                {duration:200})
+        })
+        .mouseout(function(){
+          $(this).stop().animate({'opacity':0.4, 'font-size':'10px'}, 			{duration:200})
+        })
+    </script>
+  </body>
+<html>
+
+
+
+
+

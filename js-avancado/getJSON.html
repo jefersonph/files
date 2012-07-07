@@ -1,0 +1,15 @@
+<html>
+  <head></head>
+  <body>
+    <div id="c"></div>
+    <script src="jquery.js"></script>
+    <script>
+      $.getJSON('alunos.json', function(data){
+        $(data).each(function(){
+	  $('#c').append( this['nome'] + '<br />' )
+	})
+      })
+      // $('<div></div>').css()...
+    </script>
+  </body>
+</html>

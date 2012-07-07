@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>jQuery UI Example Page</title>
+<link rel="stylesheet" href="/css/base.css" type="text/css" media="all" />
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.3/themes/base/jquery-ui.css" type="text/css" media="all" />
+<link rel="stylesheet" href="http://static.jquery.com/ui/css/demo-docs-theme/ui.theme.css" type="text/css" media="all" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.3/jquery-ui.min.js" type="text/javascript"></script>
+		
+<style type="text/css">
+			 body{ background-image:url('http://www.partnersministry.com.ph/images/gradient2.png'); background-repeat:repeat-x;; font: 62.5% "Trebuchet MS", sans-serif; margin: 50px;}
+			.demoHeaders { margin-top: 2em; }
+			.pagina1{
+				border:solid 1px;
+				display: none;
+				width:150px;
+				height:100px;
+				background:gray;
+			}
+		</style>	
+
+		<script type="text/javascript">
+			$(function(){
+		$("#dialog").dialog("destroy");
+		$("#dialog-confirm").dialog({
+			resizable: false,
+			height:140,
+			modal: true,
+			buttons: {
+				'OK': function() {
+					console.log($("#nomeuser").val());
+					$(this).dialog('close');
+					$("#pag1").css({
+						display: 'block'
+					});
+					$("#usuario").html($("#nomeuser").val());
+					$("button").button();
+	
+
+
+				}
+			}
+		});
+		
+		
+
+});
+		</script>
+	</head>
+	<body>
+<div id="dialog-confirm" title="Informe Usuario">
+	<p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>Nome:</p>
+	<input type="text" id="nomeuser"/>
+
+</div>
+<div class="demo">
+
+	<button>A button element</button>
+	<button>A button element</button>
+	<button>A button element</button>
+	
+	
+</div>
+
+<div id="pag1" class="pagina1">
+	asdfasdfasdf
+</div>
+<div>
+<span id="usuario"></span>
+
+	</body>
+</html>
+
+

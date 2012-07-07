@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE faces-config PUBLIC "-//Sun Microsystems, Inc.//DTD JavaServer Faces Config 1.0//EN"
+                              "http://java.sun.com/dtd/web-facesconfig_1_0.dtd">
+<faces-config>
+ <managed-bean>
+  <managed-bean-name>tilesBacking</managed-bean-name>
+  <managed-bean-class>org.apache.myfaces.tiles.example.TilesBacking</managed-bean-class>
+  <managed-bean-scope>request</managed-bean-scope>
+ </managed-bean>
+ <navigation-rule>
+  <from-view-id>*</from-view-id>
+  <navigation-case>
+   <from-outcome>nav_page1</from-outcome>
+   <to-view-id>/page1.jsp</to-view-id>
+  </navigation-case>
+  <navigation-case>
+   <from-outcome>nav_page2</from-outcome>
+   <to-view-id>/page2.jsp</to-view-id>
+  </navigation-case>
+  <navigation-case>
+   <from-outcome>nav_page3</from-outcome>
+   <to-view-id>/non-tile.jsp</to-view-id>
+  </navigation-case>
+ </navigation-rule>
+ <navigation-rule>
+  <from-view-id>/non-tile.jsp</from-view-id>
+  <navigation-case>
+   <from-outcome>back</from-outcome>
+   <to-view-id>/page1.jsp</to-view-id>
+  </navigation-case>
+ </navigation-rule>
+ <application>
+  <view-handler>org.apache.myfaces.application.jsp.JspTilesViewHandlerImpl</view-handler>
+  <locale-config/>
+ </application>
+ <lifecycle/>
+ <factory/>
+</faces-config>

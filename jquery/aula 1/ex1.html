@@ -1,0 +1,26 @@
+<html>
+<!--
+	Encontre o bug
+-->
+<head>
+	<script>
+		var obj = {};
+ 		obj.target = {
+			find : function(){
+				alert('Find');
+			}
+			close : function(){
+				alert('Close');
+			},
+			bug : function(){
+				alert('Parabens!');
+			}
+		}
+		window.onload = function(){
+			obj.target.bug();
+		}
+	</script>
+</head>
+<body>
+</body>
+</html>

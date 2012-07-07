@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XStudio ENTITY="SharableXStudio" NAME="XStudio" SCOPE="project">
+ <Options ENTITY="SharableOptions" NAME="Options" SCOPE="project">
+  <StrutsStudio ENTITY="SharableStrutsStudio" NAME="Struts Studio" SCOPE="project">
+   <Servlet24Libs ENTITY="SharableServlet24Libs"
+    NAME="Servlet 2.4 Libraries" SCOPE="project" libraries="EXADEL_LIB_HOME/servlet/2.4/servlet-api.jar;EXADEL_LIB_HOME/servlet/2.4/jsp-api.jar"/>
+   <Servlet22Libs ENTITY="SharableServlet22Libs"
+    NAME="Servlet 2.2 Libraries" SCOPE="project" libraries="EXADEL_LIB_HOME/servlet/2.2/servlet.jar"/>
+   <Servlet23Libs ENTITY="SharableServlet23Libs"
+    NAME="Servlet 2.3 Libraries" SCOPE="project" libraries="EXADEL_LIB_HOME/servlet/2.3/servlet.jar"/>
+   <Struts10Libs ENTITY="SharableStruts10Libs"
+    NAME="Struts 1.0 Libraries" SCOPE="project" libraries="STRUTSSTUDIO_LIB_HOME/struts-1.0/struts.jar"/>
+   <CodeGeneration ENTITY="SharableCodeGeneration"
+    NAME="Code Generation" SCOPE="project">
+    <CodeGenerationException ENTITY="SharableCodeGenerationException"
+     NAME="Exception" SCOPE="project"/>
+    <CodeGenerationAction ENTITY="SharableCodeGenerationAction"
+     NAME="Action" SCOPE="project"/>
+    <CodeGenerationCommon ENTITY="SharableCodeGenerationCommon"
+     NAME="Common" SCOPE="project"/>
+    <CodeGenerationGlobalForward
+     ENTITY="SharableCodeGenerationGlobalForward" NAME="Global Forward" SCOPE="project"/>
+    <CodeGenerationGlobalException
+     ENTITY="SharableCodeGenerationGlobalException"
+     NAME="Global Exception" SCOPE="project"/>
+    <CodeGenerationForward ENTITY="SharableCodeGenerationForward"
+     NAME="Forward" SCOPE="project"/>
+   </CodeGeneration>
+   <Running ENTITY="SharableRunning" NAME="Running" SCOPE="project"
+    browser_path="C:\Program Files\Internet Explorer\IEXPLORE.EXE"
+    default_server="Tomcat" default_wtp_server="09_04_08_19_311">
+    <RunningJ2EE ENTITY="SharableRunningJ2EE" NAME="J2EE 1.4 SDK"
+     SCOPE="project" browser_prefix="" domain="" root=""/>
+    <RunningTomcat ENTITY="SharableRunningTomcat" NAME="Tomcat"
+     SCOPE="project" browser_prefix="http://localhost:8880/" jvm_args=""
+     jvm_default="yes" show_warning="yes" tomcat_jvm="" tomcat_root=""/>
+    <RunningJBoss ENTITY="SharableRunningJBoss" NAME="JBoss"
+     SCOPE="project" browser_prefix="http://localhost:8080/"
+     jboss_jvm="" jboss_root="" jvm_args="-Xms128m -Xmx512m"
+     jvm_default="yes" show_warning="yes"/>
+    <RunningJRun ENTITY="SharableRunningJRun" NAME="JRun"
+     SCOPE="project" browser_prefix="" jrun_jvm="" jrun_root=""
+     jvm_args="-Xms128m -Xmx512m" jvm_default="yes" server="" show_warning="yes"/>
+   </Running>
+   <LinkRecognizer ENTITY="SharableLinkRecognizer"
+    NAME="Link Recognizer" SCOPE="project"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<link-recognizer ENTITY="JSPLinkRecognizer">
+ <link ENTITY="JSPLink" attribute="action" tag="html:link"/>
+ <link ENTITY="JSPLink" attribute="page" refer-to="page" tag="html:link"/>
+ <link ENTITY="JSPLink" attribute="forward" refer-to="forward" tag="html:link"/>
+ <link ENTITY="JSPLink" attribute="action" tag="html:frame"/>
+ <link ENTITY="JSPLink" attribute="page" refer-to="page" tag="html:frame"/>
+ <link ENTITY="JSPLink" attribute="forward" refer-to="forward" tag="html:frame"/>
+ <link ENTITY="JSPLink" attribute="action" tag="html:form"/>
+ <link ENTITY="JSPLink" attribute="name" refer-to="forward" tag="logic:forward"/>
+ <link ENTITY="JSPLink" attribute="forward" refer-to="forward" tag="logic:redirect"/>
+</link-recognizer>]]></LinkRecognizer>
+   <Struts11Libs ENTITY="SharableStruts11Libs"
+    NAME="Struts 1.1 Libraries" SCOPE="project" libraries="STRUTSSTUDIO_LIB_HOME/struts-1.1/commons-beanutils.jar;STRUTSSTUDIO_LIB_HOME/struts-1.1/commons-collections.jar;STRUTSSTUDIO_LIB_HOME/struts-1.1/commons-digester.jar;STRUTSSTUDIO_LIB_HOME/struts-1.1/commons-fileupload.jar;STRUTSSTUDIO_LIB_HOME/struts-1.1/commons-lang.jar;STRUTSSTUDIO_LIB_HOME/struts-1.1/commons-logging.jar;STRUTSSTUDIO_LIB_HOME/struts-1.1/commons-validator.jar;STRUTSSTUDIO_LIB_HOME/struts-1.1/jakarta-oro.jar;STRUTSSTUDIO_LIB_HOME/struts-1.1/struts.jar;STRUTSSTUDIO_LIB_HOME/struts-1.1/struts-legacy.jar"/>
+   <Automation ENTITY="SharableAutomation" NAME="Automation" SCOPE="project">
+    <ResourcesInsets ENTITY="SharableResourcesInsets"
+     NAME="Resources Insets" SCOPE="project">
+     <InsetsErrorMessages ENTITY="SharableInsetsErrorMessages"
+      NAME="Default Error Messages" SCOPE="project" text="errors.required={0} is required.\nerrors.minlength={0} can not be less than {1} characters.\nerrors.maxlength={0} can not be greater than {1} characters.\nerrors.invalid={0} is invalid.\n \nerrors.byte={0} must be a byte.\nerrors.short={0} must be a short.\nerrors.integer={0} must be an integer.\nerrors.long={0} must be a long.\nerrors.float={0} must be a float.\nerrors.double={0} must be a double.\n \nerrors.date={0} is not a date.\nerrors.range={0} is not in the range {1} through {2}.\nerrors.creditcard={0} is an invalid credit card number.\nerrors.email={0} is an invalid e-mail address.\n"/>
+    </ResourcesInsets>
+    <PluginsInsets ENTITY="SharablePluginsInsets" NAME="Plug-ins Insets" SCOPE="project">
+     <InsetsTiles ENTITY="SharableInsetsTiles" NAME="Tiles"
+      SCOPE="project" text="&lt;plug-in className=&quot;org.apache.struts.tiles.TilesPlugin&quot;>\n  &lt;set-property property=&quot;definitions-config&quot; value=&quot;/WEB-INF/tiles-defs.xml&quot;/>\n &lt;set-property property=&quot;moduleAware&quot; value=&quot;true&quot;/>\n&lt;/plug-in>"/>
+     <InsetsValidators ENTITY="SharableInsetsValidators"
+      NAME="Validators" SCOPE="project" text="&lt;plug-in className=&quot;org.apache.struts.validator.ValidatorPlugIn&quot;>\n  &lt;set-property property=&quot;pathnames&quot; value=&quot;/WEB-INF/validator-rules.xml, /WEB-INF/validation.xml&quot;/>\n &lt;/plug-in>"/>
+    </PluginsInsets>
+   </Automation>
+   <Project ENTITY="SharableProject" NAME="Project" SCOPE="project">
+    <ImportProject ENTITY="SharableImportProject" NAME="Import Project"
+     SCOPE="project" register_web_context="yes" servlet_version="2.3"/>
+    <NewProject ENTITY="SharableNewProject" NAME="New Project"
+     SCOPE="project" directory="Z:\Java II\eclipse"
+     register_web_context="yes" servlet_version="2.3" template="Blank"
+     use_default="yes" version="Struts 1.1"/>
+    <StrutsSupport ENTITY="SharableStrutsSupport" NAME="Struts Support" SCOPE="project">
+     <Struts11Support ENTITY="SharableStruts11Support"
+      NAME="Struts Support 1.1" SCOPE="project"
+      servlet_class="org.apache.struts.action.ActionServlet"
+      tld_files="struts-bean.tld;struts-logic.tld;struts-html.tld" url_pattern="*.do"/>
+     <Struts12Support ENTITY="SharableStruts12Support"
+      NAME="Struts Support 1.2" SCOPE="project"
+      servlet_class="org.apache.struts.action.ActionServlet"
+      tld_files="struts-bean.tld;struts-logic.tld;struts-html.tld" url_pattern="*.do"/>
+     <Struts10Support ENTITY="SharableStruts10Support"
+      NAME="Struts Support 1.0" SCOPE="project"
+      servlet_class="org.apache.struts.action.ActionServlet"
+      tld_files="struts-bean.tld;struts-logic.tld;struts-html.tld" url_pattern="*.do"/>
+    </StrutsSupport>
+   </Project>
+   <Editors ENTITY="SharableEditors" NAME="Editors" SCOPE="project"
+    natureWarning="yes" selectSourceTab="no" useExadelEditors="yes">
+    <StrutsEditor ENTITY="SharableStrutsEditor" NAME="Web Flow Diagram"
+     SCOPE="project" action_font="default,size=8,style=1"
+     comment_font="default,size=10,style=0" doNotShowDiagram="no"
+     enableControlModeOnTransitionCompleted="yes"
+     forward_font="default,size=7,style=1" grid_step="16"
+     path_font="default,size=8,style=1" removePageWithFile="yes"
+     showShortcutIcon="yes" showShortcutPath="yes" show_grid="yes">
+     <StrutsAddPage ENTITY="SharableStrutsAddPage" NAME="Add Page"
+      SCOPE="project" extension="jsp" page-template="StrutsForm"/>
+    </StrutsEditor>
+    <TilesEditor ENTITY="SharableTilesEditor" NAME="Tiles Diagram"
+     SCOPE="project" alignment="Top" animation="yes"
+     definitionNameFont="default,size=7,style=1"
+     horizontalSpacing="default(185)" verticalSpacing="default(20)"/>
+    <VPEEditor ENTITY="SharableVPEEditor" NAME="Visual Page Editor"
+     SCOPE="project" always_request_for_attribute_during_tag_insert="no"
+     option_list="Visual/Source" show_border_for_unknown_tags="yes" show_resource_bundles_usage_as_el_expressions="no"/>
+    <JSFEditor ENTITY="SharableJSFEditor" NAME="JSF Flow Diagram"
+     SCOPE="project" doNotCreateEmptyRule="yes"
+     enableControlModeOnTransitionCompleted="yes" grid_step="16"
+     link_path_font="default,size=8,style=1" removePageWithFile="yes"
+     showShortcutIcon="yes" showShortcutPath="yes" show_grid="yes" view_path_font="default,size=8,style=1">
+     <JSFAddView ENTITY="SharableJSFAddView" NAME="Add View"
+      SCOPE="project" extension="jsp" page-template="JSFBasePage"/>
+    </JSFEditor>
+   </Editors>
+   <ReportProblem ENTITY="SharableReportProblem" NAME="Report Problem"
+    SCOPE="project" attachEclipseLog="no" attachExadelLog="yes" eMail=""
+    other="" showErrorDialog="yes" submitProblemAutomatically="no"/>
+  </StrutsStudio>
+  <Exadel ENTITY="SharableExadel" NAME="Exadel" SCOPE="project">
+   <JSFStudio ENTITY="SharableJSFStudio" NAME="JSF Studio" SCOPE="project">
+    <JSFProject ENTITY="SharableJSFProject" NAME="Project" SCOPE="project">
+     <ImportJSFProject ENTITY="SharableImportJSFProject"
+      NAME="Import Project" SCOPE="project" register_web_context="yes" servlet_version="2.4"/>
+     <NewJSFProject ENTITY="SharableNewJSFProject" NAME="New Project"
+      SCOPE="project" directory="Z:\Java II\eclipse"
+      register_web_context="yes" servlet_version="2.4"
+      template="JSFBlank" use_default="yes" version="JSF 1.1.01 - Reference Implementation"/>
+    </JSFProject>
+    <JSF10Libs ENTITY="SharableJSF10Libs" NAME="JSF 1.0 Libraries"
+     SCOPE="project" libraries="JSFSTUDIO_LIB_HOME/jsf-1.0/commons-beanutils.jar;JSFSTUDIO_LIB_HOME/jsf-1.0/commons-collections.jar;JSFSTUDIO_LIB_HOME/jsf-1.0/commons-digester.jar;JSFSTUDIO_LIB_HOME/jsf-1.0/commons-logging.jar;JSFSTUDIO_LIB_HOME/jsf-1.0/jsf-api.jar;JSFSTUDIO_LIB_HOME/jsf-1.0/jsf-impl.jar;JSFSTUDIO_LIB_HOME/jsf-1.0/jstl.jar;JSFSTUDIO_LIB_HOME/jsf-1.0/standard.jar"/>
+   </JSFStudio>
+  </Exadel>
+ </Options>
+</XStudio>

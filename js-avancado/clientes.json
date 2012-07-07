@@ -1,0 +1,5 @@
+[
+  {"cnpj":"123654","razao":"Target S/A","aceita":true},
+  {"cnpj":"983498","razao":"Baz S/A","aceita":false},
+  {"cnpj":"405950","razao":"Foo Bar S/A","aceita":true}
+]

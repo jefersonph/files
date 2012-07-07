@@ -1,0 +1,17 @@
+Exercícios Revisão Javascript:
+
+1 - Crie uma página HTML que ao ser acessada seja exibida uma caixa de dialogo pedindo o nome do usuario.
+    Exiba o nome digitado pelo usuario dentro de um elemento DIV de sua página HTML.
+
+2 - Crie um método que valide se o nome digitado é válido. (Maior que 3 caracteres, diferente de nulo e de espaço)
+
+3 - Utilizando o Firebug descubra o erro Javascript no arquivo ex1.html
+
+4 - Faça uma função que receba 2 numeros e retorne qual o maior entre eles.
+
+5 - Faça uma função que receba 3 numeros e retorne qual o maior entre eles.
+
+6 - Faça uma função que receba N numeros  e retorne qual o maior entre eles.
+
+7 - Faça uma função que receba uma string e retorne a mesma, porém ao contrário.
+

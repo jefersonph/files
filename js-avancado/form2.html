@@ -1,0 +1,59 @@
+<html>
+	<head></head>
+	<body>
+
+		<div id="baloon" style="display:none;
+					position:absolute;width:300px;height:200px;background: url(baloon.png)">
+			<div style="padding:60px;">
+			 Qualquer coisa aqui dentro.
+			 Qualquer coisa aqui dentro.
+			</div>
+		</div>
+		<br /><br /><br /><br /><br />
+
+		<form>
+			Name:  <input id="name" tabindex="1" /><br />
+			Email:  <input id="email" tabindex="2" /><br />
+			<input type="submit" value="Enviar" />
+		</form>
+
+    <script src="jquery.js"></script>
+    <script>
+$('#name').focus()
+$('form').submit(function(){
+  ok = true
+	if( ! $('#name').val() ){
+		$('#name').focus().css('background','yellow')
+		$('#baloon div').html('Nome deve ser preenchido!')
+		x = $('#name').position()['left'] + $('#name').width() + 20
+		y = $('#name').position()['top'] - 80
+		$('#baloon').show().animate({left:x,top:y})
+		ok = false
+	}
+	if( ! $('#email').val() ){
+		$('#email').focus().css('background','yellow')
+		$('#baloon div').html('Email deve ser preenchido!')
+		x = $('#email').position()['left'] + $('#email').width() + 20
+		y = $('#email').position()['top'] - 80
+		$('#baloon').show().animate({left:x,top:y})
+		ok = false
+	}
+
+  $('#email').val().match(/.+@.+/)
+	
+  return ok
+})
+
+
+    </script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+

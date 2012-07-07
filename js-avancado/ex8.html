@@ -1,0 +1,14 @@
+<html>
+  <head></head>
+  <body>
+    <div id="c"></div>
+    <script src="jquery.js"></script>
+    <script>
+    $.getJSON('divs.json', function(data){
+      $(data).each(function(){
+	$('<div></div>').css({position:'absolute'}).css(this).appendTo('#c')
+      })
+    })
+    </script>
+  </body>
+</html>

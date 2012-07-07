@@ -1,0 +1,20 @@
+<html>
+ <head></head>
+ <body>
+  <div id="a">Pinta de vermelho</div>
+  <div id="b">Pinta de verde</div>
+  <div id="c">Pinta de azul</div>
+  <script>
+    pinta = function(cor){
+      return function(){
+        this.style.background = cor
+      }
+    }
+    document.getElementById('a').onclick = pinta('red')
+    document.getElementById('b').onclick = pinta('green')
+    document.getElementById('c').onclick = pinta('blue')
+  </script>
+ </body>
+</html>
+
+

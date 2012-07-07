@@ -1,0 +1,27 @@
+<html>
+  <head></head>
+  <body>
+    <div id="container"></div>
+    <script src="jquery.js"></script>
+    <script src="color.js"></script>
+    <script>
+  busca = function(){
+    $.getJSON('divs2.json', function(data){
+      $(data).each(function(){
+        if( $('#'+this[0]).length > 0 ){
+	  $('#'+this[0]).animate(this[1])
+        }else{
+  	  $('<div></div>')
+            .attr('id',this[0])
+	    .css({position:'absolute'})
+            .css(this[1])
+            .appendTo('#container')
+        }
+      })
+      setTimeout(busca,500)
+    })
+  }
+  busca()
+    </script>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+#Wed Apr 09 22:16:14 GMT-03:00 2008
+eclipse.preferences.version=1
+org.eclipse.jdt.core.builder.resourceCopyExclusionFilter=*.launch
+org.eclipse.jdt.core.classpathVariable.STRUTSSTUDIO_LIB_HOME=Z\:/Java II/eclipse/.metadata/.plugins/com.exadel.project.templates/lib
+org.eclipse.jdt.core.codeComplete.visibilityCheck=enabled
